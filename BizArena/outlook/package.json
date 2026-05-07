@@ -1,0 +1,12 @@
+{
+  "name": "cc-outlook",
+  "version": "1.0.0",
+  "description": "Fake Outlook email web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

@@ -1,0 +1,3040 @@
+{
+  "emails": [
+    {
+      "id": "email-001",
+      "subject": "Q4 Budget Review - Action Required",
+      "from": {
+        "name": "Sarah Mitchell",
+        "email": "sarah.mitchell@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>Please review the Q4 budget figures I've attached. We need your sign-off by end of week. A few line items are over forecast and need your attention before the board meeting on Friday.</p><p>Key areas of concern:</p><ul><li>Marketing spend: 12% over budget</li><li>Travel expenses: 8% over budget</li><li>Software licenses: within budget</li></ul><p>Let me know if you have questions.</p><p>Best,<br>Sarah Mitchell<br>Finance Director</p>",
+      "timestamp": "2026-03-04T08:47:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": true,
+      "pinned": true,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-001",
+      "replyToId": null,
+      "category": "yellow",
+      "attachments": [
+        {
+          "name": "Q4_Budget_2026.xlsx",
+          "size": 284672
+        },
+        {
+          "name": "Budget_Variance_Report.pdf",
+          "size": 512000
+        }
+      ]
+    },
+    {
+      "id": "email-002",
+      "subject": "Sprint Planning Meeting - Thursday 2pm",
+      "from": {
+        "name": "Jennifer Park",
+        "email": "jennifer.park@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Dev Team",
+          "email": "devteam@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Just a reminder that our Sprint 24 planning session is scheduled for this Thursday at 2pm in Conference Room B. Please come prepared with your ticket estimates.</p><p>Agenda:</p><ol><li>Review Sprint 23 velocity (15 min)</li><li>Backlog grooming (30 min)</li><li>Story point estimation (45 min)</li><li>Sprint goal alignment (15 min)</li></ol><p>Please confirm your attendance.</p><p>Thanks,<br>Jennifer Park<br>Scrum Master</p>",
+      "timestamp": "2026-03-04T08:31:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-002",
+      "replyToId": null
+    },
+    {
+      "id": "email-003",
+      "subject": "Project Phoenix - Status Update",
+      "from": {
+        "name": "Marcus Thompson",
+        "email": "marcus.thompson@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Alex,</p><p>Quick update on Project Phoenix. The backend migration to the new cloud infrastructure is 80% complete. We hit a snag with the legacy API integration but the team has a workaround in place.</p><p>Current status:</p><ul><li>Database migration: Complete</li><li>API layer: 80% complete - ETA Thursday</li><li>Frontend updates: Not started - pending API</li><li>QA testing: Scheduled for next week</li></ul><p>Overall we're still on track for the March 15th go-live. I'll send a more detailed report tomorrow.</p><p>Marcus Thompson<br>Lead Developer</p>",
+      "timestamp": "2026-03-04T08:22:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-003",
+      "replyToId": null
+    },
+    {
+      "id": "email-004",
+      "subject": "New Employee Onboarding - Welcome Package",
+      "from": {
+        "name": "HR Department",
+        "email": "hr@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Dear Alex,</p><p>We are pleased to welcome two new team members joining the engineering department on Monday, March 9th:</p><ul><li><strong>Priya Sharma</strong> - Senior Frontend Developer</li><li><strong>Daniel Lee</strong> - DevOps Engineer</li></ul><p>As their team lead, please ensure their workstations are set up and that you schedule a 30-minute orientation meeting on their first day.</p><p>Their onboarding documents are in the shared drive under /HR/Onboarding/March2026.</p><p>HR Department<br>Contoso Corporation</p>",
+      "timestamp": "2026-03-04T08:07:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": true,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-004",
+      "replyToId": null,
+      "category": "none",
+      "attachments": [
+        {
+          "name": "Onboarding_Package_Mar2026.pdf",
+          "size": 1048576
+        },
+        {
+          "name": "IT_Setup_Checklist.docx",
+          "size": 98304
+        }
+      ]
+    },
+    {
+      "id": "email-005",
+      "subject": "Critical: Production Server Down",
+      "from": {
+        "name": "Automated Alerts",
+        "email": "alerts@monitoring.contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p><strong>CRITICAL ALERT</strong></p><p>Production server web-prod-03 is not responding.</p><p><strong>Alert Details:</strong></p><ul><li>Server: web-prod-03.contoso.com</li><li>Alert Time: 2026-03-02 11:42:00 UTC</li><li>Duration: 15 minutes</li><li>Impact: ~2,400 users affected</li></ul><p>Automatic failover has been triggered to web-prod-04. Please investigate the root cause and acknowledge this alert.</p><p>Monitoring System<br>Contoso Infrastructure</p>",
+      "timestamp": "2026-03-04T07:55:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-005",
+      "replyToId": null
+    },
+    {
+      "id": "email-006",
+      "subject": "Code Review Request: Auth Module Refactor",
+      "from": {
+        "name": "Priya Sharma",
+        "email": "priya.sharma@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>I've submitted a PR for the auth module refactor we discussed last week. The changes include:</p><ul><li>Replaced deprecated JWT library with jose</li><li>Added refresh token rotation</li><li>Improved error messages for OAuth flow</li><li>Added unit tests (coverage now at 94%)</li></ul><p>PR link: https://github.com/contoso/platform/pull/847</p><p>It's ready for review. Estimated review time: 30-45 minutes.</p><p>Thanks,<br>Priya</p>",
+      "timestamp": "2026-03-04T07:40:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": true,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-006",
+      "replyToId": null
+    },
+    {
+      "id": "email-007",
+      "subject": "Team Lunch Friday - RSVP Needed",
+      "from": {
+        "name": "Rachel Green",
+        "email": "rachel.green@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "body": "<p>Hey everyone,</p><p>We're doing a team lunch this Friday at The Italian Place on 5th Ave. to celebrate shipping v2.0!</p><p>Details:</p><ul><li>Date: Friday, March 6th</li><li>Time: 12:30pm</li><li>Restaurant: The Italian Place, 123 5th Ave</li><li>Cost: Covered by the team budget</li></ul><p>Please RSVP by replying to this email by Wednesday so I can make a reservation.</p><p>Hope to see everyone there!</p><p>Rachel</p>",
+      "timestamp": "2026-03-04T07:28:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": true,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-007",
+      "replyToId": null
+    },
+    {
+      "id": "email-008",
+      "subject": "Disk Usage Warning: /data volume at 87%",
+      "from": {
+        "name": "Automated Alerts",
+        "email": "alerts@monitoring.contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p><strong>WARNING ALERT</strong></p><p>Storage volume /data on storage-server-02 is at 87% capacity.</p><p><strong>Alert Details:</strong></p><ul><li>Server: storage-server-02.contoso.com</li><li>Volume: /data</li><li>Current Usage: 87.3% (174.6 GB of 200 GB)</li><li>Alert Threshold: 85%</li><li>Trend: +2.1 GB per day</li></ul><p>Estimated time to full: ~12 days at current growth rate. Please review and clean up old logs or provision additional storage.</p><p>Monitoring System</p>",
+      "timestamp": "2026-03-01T06:00:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-008",
+      "replyToId": null
+    },
+    {
+      "id": "email-009",
+      "subject": "Re: Annual Performance Review Process",
+      "from": {
+        "name": "Linda Chen",
+        "email": "linda.chen@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>Following up on the performance review process for your team. The self-assessment portal opens March 10th and closes March 20th. As a team lead, you'll need to complete both your own self-assessment AND peer reviews for your direct reports.</p><p>Your direct reports this cycle:</p><ul><li>Marcus Thompson</li><li>Priya Sharma</li><li>Daniel Lee</li></ul><p>I'll send calendar invites for your review meetings next week. Let me know if you have any questions about the process.</p><p>Linda Chen<br>HR Business Partner</p>",
+      "timestamp": "2026-02-28T13:45:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-009",
+      "replyToId": null
+    },
+    {
+      "id": "email-010",
+      "subject": "SSL Certificate Expiry Warning",
+      "from": {
+        "name": "Automated Alerts",
+        "email": "alerts@monitoring.contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p><strong>WARNING ALERT</strong></p><p>SSL certificate for api.contoso.com will expire in 14 days.</p><p><strong>Certificate Details:</strong></p><ul><li>Domain: api.contoso.com</li><li>Issuer: Let's Encrypt</li><li>Expiry Date: 2026-03-17</li><li>Days Remaining: 14</li></ul><p>Please renew the certificate before it expires to avoid service disruption. Auto-renewal may have failed — check the certbot logs on web-prod-01.</p><p>Monitoring System</p>",
+      "timestamp": "2026-02-28T09:00:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-010",
+      "replyToId": null
+    },
+    {
+      "id": "email-011",
+      "subject": "Your Weekly GitHub Digest",
+      "from": {
+        "name": "GitHub",
+        "email": "noreply@github.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Here's your weekly activity digest from GitHub:</p><p><strong>Repositories with activity:</strong></p><ul><li>contoso/platform: 23 commits, 4 PRs merged</li><li>contoso/mobile-app: 11 commits, 2 PRs merged</li><li>contoso/infra-configs: 5 commits, 1 PR merged</li></ul><p><strong>Open items needing your attention:</strong></p><ul><li>3 PRs awaiting your review</li><li>2 issues assigned to you</li></ul><p>View your GitHub dashboard for details.</p>",
+      "timestamp": "2026-03-04T07:12:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-011",
+      "replyToId": null
+    },
+    {
+      "id": "email-012",
+      "subject": "LinkedIn: 5 new connection requests",
+      "from": {
+        "name": "LinkedIn",
+        "email": "messages-noreply@linkedin.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>You have 5 new connection requests waiting for you on LinkedIn:</p><ul><li>Tom Bradley - Senior Engineer at TechCorp</li><li>Alicia Wang - Product Manager at StartupXYZ</li><li>Robert Kim - DevOps Lead at CloudBase</li><li>Nadia Patel - Engineering Manager at FintechPro</li><li>Carlos Rivera - Full Stack Developer at WebAgency</li></ul><p>Log in to review and respond to these requests.</p>",
+      "timestamp": "2026-03-01T12:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-012",
+      "replyToId": null
+    },
+    {
+      "id": "email-013",
+      "subject": "JavaScript Weekly #624",
+      "from": {
+        "name": "JavaScript Weekly",
+        "email": "editorial@javascriptweekly.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p><strong>JavaScript Weekly Issue #624</strong></p><p>This week's top picks:</p><ul><li><strong>Bun 2.0 Released</strong> - Major performance improvements and new APIs</li><li><strong>What's New in TypeScript 5.8</strong> - New type narrowing features</li><li><strong>React Compiler: 6 Months In</strong> - Real-world performance results</li><li><strong>Deno vs Node.js in 2026</strong> - A practical comparison guide</li><li><strong>Web Workers Explained</strong> - Offloading computation to background threads</li></ul><p>Read the full issue at javascriptweekly.com</p>",
+      "timestamp": "2026-02-28T08:00:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-013",
+      "replyToId": null
+    },
+    {
+      "id": "email-014",
+      "subject": "Your Azure subscription invoice - Feb 2026",
+      "from": {
+        "name": "Microsoft Azure",
+        "email": "azure-noreply@microsoft.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Dear Alex Johnson,</p><p>Your Azure invoice for February 2026 is now available.</p><p><strong>Invoice Summary:</strong></p><ul><li>Invoice Number: INV-AZ-2026-02-48291</li><li>Billing Period: Feb 1 – Feb 28, 2026</li><li>Amount Due: $1,847.32</li><li>Due Date: March 15, 2026</li></ul><p>Your subscription is set to auto-pay. No action required unless you need to dispute a charge.</p><p>Microsoft Azure Billing</p>",
+      "timestamp": "2026-03-01T00:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": true,
+      "isExternal": true,
+      "conversationId": "conv-014",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Azure_Invoice_Feb2026.pdf",
+          "size": 204800
+        }
+      ]
+    },
+    {
+      "id": "email-015",
+      "subject": "Slack digest: #engineering (14 new messages)",
+      "from": {
+        "name": "Slack",
+        "email": "feedback@slack.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>You missed some messages in Slack while you were away.</p><p><strong>#engineering channel:</strong></p><ul><li>Jennifer Park: Can everyone update their ticket estimates before Thursday?</li><li>Marcus Thompson: The API gateway race condition is fixed, deploying now</li><li>Daniel Lee: Who has access to the prod Kubernetes cluster? Need to check resource limits</li><li>Priya Sharma: PR #847 is up for review - auth module refactor</li></ul><p>View full conversation in Slack.</p>",
+      "timestamp": "2026-03-04T07:01:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-015",
+      "replyToId": null
+    },
+    {
+      "id": "email-016",
+      "subject": "Unsubscribe confirmation - TechNews Daily",
+      "from": {
+        "name": "TechNews Daily",
+        "email": "no-reply@technewsdaily.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>You've been successfully unsubscribed from TechNews Daily. You will no longer receive our newsletter.</p><p>Changed your mind? You can re-subscribe at any time at technewsdaily.com/subscribe.</p><p>The TechNews Daily Team</p>",
+      "timestamp": "2026-02-27T11:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-016",
+      "replyToId": null
+    },
+    {
+      "id": "email-017",
+      "subject": "npm security alert: 2 vulnerabilities found",
+      "from": {
+        "name": "npm Security",
+        "email": "security@npmjs.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>We found 2 vulnerabilities in a package you own or maintain.</p><p><strong>Package: contoso-sdk@2.1.4</strong></p><p><strong>Vulnerability 1 (High):</strong> Prototype pollution in lodash dependency (CVE-2025-11234). Update to lodash@4.17.22 or higher.</p><p><strong>Vulnerability 2 (Moderate):</strong> ReDoS vulnerability in validator dependency (CVE-2025-9876). Update to validator@13.12.0 or higher.</p><p>Run <code>npm audit fix</code> to automatically fix these issues.</p>",
+      "timestamp": "2026-02-27T09:00:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-017",
+      "replyToId": null
+    },
+    {
+      "id": "email-018",
+      "subject": "Conference Room Booking Confirmation",
+      "from": {
+        "name": "Room Booking System",
+        "email": "rooms@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Your room booking has been confirmed.</p><p><strong>Booking Details:</strong></p><ul><li>Room: Conference Room B (4th Floor)</li><li>Date: Thursday, March 5, 2026</li><li>Time: 2:00 PM – 4:00 PM</li><li>Capacity: 12 people</li><li>Booked by: Jennifer Park (on behalf of Sprint Team)</li></ul><p>Equipment available: Projector, Whiteboard, Video conferencing</p><p>To cancel or modify this booking, visit the room booking portal.</p>",
+      "timestamp": "2026-03-04T06:52:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": true,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-018",
+      "replyToId": null
+    },
+    {
+      "id": "email-019",
+      "subject": "Podcast Recommendation: Software Engineering Daily",
+      "from": {
+        "name": "David Clark",
+        "email": "david.clark@gmail.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hey Alex!</p><p>Long time no talk. I heard a great podcast episode I thought you'd enjoy — Software Engineering Daily did a deep dive on event-driven architecture patterns that really resonated with some of the stuff you mentioned you were working on last time we caught up.</p><p>Episode: \"Scaling with Event Sourcing\" - about 55 minutes. Really practical, not too theoretical.</p><p>Hope all is well. We should grab coffee sometime soon.</p><p>Cheers,<br>David</p>",
+      "timestamp": "2026-02-26T18:30:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-019",
+      "replyToId": null
+    },
+    {
+      "id": "email-020",
+      "subject": "Your order has shipped - Order #CON-88412",
+      "from": {
+        "name": "Contoso Store",
+        "email": "orders@contososupplies.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Great news! Your order has shipped.</p><p><strong>Order Details:</strong></p><ul><li>Order Number: CON-88412</li><li>Item: Mechanical Keyboard - TKL Cherry MX Blue</li><li>Carrier: FedEx</li><li>Tracking: 7489234091234</li><li>Estimated Delivery: March 4-5, 2026</li></ul><p>You can track your package at fedex.com using the tracking number above.</p><p>Thank you for your order!</p>",
+      "timestamp": "2026-02-25T14:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-020",
+      "replyToId": null
+    },
+    {
+      "id": "email-021",
+      "subject": "Re: Project Phoenix - Status Update",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Marcus Thompson",
+          "email": "marcus.thompson@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Marcus,</p><p>Thanks for the update. The timeline looks good. A few questions:</p><ol><li>What's the fallback plan if the Legacy API integration isn't done by Thursday?</li><li>Can the QA team start writing test cases now based on the specs, even before the API is done?</li><li>Should we push the go-live to March 22nd as a buffer?</li></ol><p>Let's sync tomorrow at 10am if you're free.</p><p>Alex</p>",
+      "timestamp": "2026-03-02T17:15:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-003",
+      "replyToId": "email-003"
+    },
+    {
+      "id": "email-022",
+      "subject": "Re: Re: Project Phoenix - Status Update",
+      "from": {
+        "name": "Marcus Thompson",
+        "email": "marcus.thompson@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Alex,</p><p>Good questions. Here are my answers:</p><ol><li>Fallback: we can stub the legacy endpoints with mock data for the demo and do a real integration in a hotfix the following week.</li><li>Yes, I've already asked Jin to start on test cases. She has the specs.</li><li>I'd prefer to keep March 15th but let's see how Thursday's API work goes.</li></ol><p>10am tomorrow works. I'll send a calendar invite.</p><p>Marcus</p>",
+      "timestamp": "2026-03-04T06:38:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": true,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-003",
+      "replyToId": "email-021",
+      "category": "red"
+    },
+    {
+      "id": "email-023",
+      "subject": "Vendor Proposal: Cloud Storage Upgrade",
+      "from": {
+        "name": "Tom Bradley",
+        "email": "tom.bradley@cloudvendor.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>Following up on our conversation at the TechConnect conference last month. I've put together a proposal for upgrading your cloud storage infrastructure.</p><p>The proposal includes:</p><ul><li>200TB scalable object storage with 99.999% uptime SLA</li><li>Automatic tiering to reduce costs by ~30%</li><li>Zero-downtime migration from your current Azure setup</li><li>24/7 support with a dedicated account manager</li></ul><p>The proposal document is attached. I'd love to schedule a 30-minute demo call. Are you available next week?</p><p>Best,<br>Tom Bradley<br>Senior Account Executive, CloudVendor</p>",
+      "timestamp": "2026-02-26T10:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": true,
+      "isExternal": true,
+      "conversationId": "conv-023",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "CloudStorage_Proposal_2026.pdf",
+          "size": 737280
+        },
+        {
+          "name": "Pricing_Tiers.xlsx",
+          "size": 45056
+        }
+      ]
+    },
+    {
+      "id": "email-024",
+      "subject": "Congratulations: 5-Year Work Anniversary!",
+      "from": {
+        "name": "HR Department",
+        "email": "hr@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Dear Alex,</p><p>Congratulations on your 5-year work anniversary at Contoso!</p><p>Your dedication and contributions to the engineering team have been invaluable. Over the past five years, you've helped ship some of our most impactful products and built a fantastic team.</p><p>As a token of appreciation, please find a $250 gift card attached to this email. You'll also find a certificate of recognition in the shared drive.</p><p>Here's to many more years of great work!</p><p>Best,<br>HR Department<br>Contoso Corporation</p>",
+      "timestamp": "2026-03-01T09:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-024",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "5Year_Gift_Card.pdf",
+          "size": 153600
+        }
+      ]
+    },
+    {
+      "id": "email-025",
+      "subject": "Interview Feedback Needed: Frontend Candidate",
+      "from": {
+        "name": "Rachel Green",
+        "email": "rachel.green@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Linda Chen",
+          "email": "linda.chen@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>We need your interview feedback for the Frontend Developer candidate (Yuki Tanaka) by end of today. Your technical interview was yesterday afternoon.</p><p>Please submit your scorecard in the applicant tracking system (Greenhouse). Key areas to evaluate:</p><ul><li>JavaScript / TypeScript proficiency</li><li>React architecture knowledge</li><li>CSS / accessibility awareness</li><li>System design thinking</li><li>Culture fit</li></ul><p>We're looking to make an offer decision by tomorrow morning. Let me know if you have any issues accessing Greenhouse.</p><p>Rachel Green<br>Technical Recruiter</p>",
+      "timestamp": "2026-03-04T07:30:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": true,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-025",
+      "replyToId": null,
+      "category": "purple"
+    },
+    {
+      "id": "email-026",
+      "subject": "Marcus Thompson shared a file with you",
+      "from": {
+        "name": "Marcus Thompson via OneDrive",
+        "email": "noreply@microsoft.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Marcus Thompson has shared a file with you.</p><p><strong>File: Phoenix_Architecture_Diagram_v3.pdf</strong></p><p>\"Hey Alex - here's the updated architecture diagram with the new API gateway design. Let me know what you think.\"</p><p>Click the link in this email to open the file in OneDrive.</p>",
+      "timestamp": "2026-03-02T19:00:00Z",
+      "folder": "deleted",
+      "read": true,
+      "flagged": true,
+      "pinned": true,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-026",
+      "replyToId": null
+    },
+    {
+      "id": "email-027",
+      "subject": "Out of Office: Daniel Lee",
+      "from": {
+        "name": "Daniel Lee",
+        "email": "daniel.lee@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>I am currently out of the office and will return on March 10, 2026.</p><p>For urgent matters related to infrastructure or DevOps, please contact Marcus Thompson at marcus.thompson@contoso.com.</p><p>I will respond to your email upon my return.</p><p>Daniel Lee<br>DevOps Engineer</p>",
+      "timestamp": "2026-03-01T08:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-027",
+      "replyToId": null
+    },
+    {
+      "id": "email-028",
+      "subject": "Security Training Reminder: Deadline This Friday",
+      "from": {
+        "name": "IT Security",
+        "email": "itsecurity@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Dear Alex,</p><p>This is a reminder that the mandatory annual security awareness training must be completed by <strong>this Friday, March 6, 2026</strong>.</p><p>You have not yet completed the following modules:</p><ul><li>Phishing Awareness 2026 (15 min)</li><li>Data Classification and Handling (20 min)</li><li>Secure Remote Work Practices (10 min)</li></ul><p>Access the training portal at: training.contoso.com</p><p>Failure to complete the training may result in temporary system access restrictions.</p><p>IT Security Team</p>",
+      "timestamp": "2026-03-04T06:22:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-028",
+      "replyToId": null
+    },
+    {
+      "id": "email-029",
+      "subject": "Happy Birthday Alex! From the team",
+      "from": {
+        "name": "Jennifer Park",
+        "email": "jennifer.park@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "body": "<p>Happy Birthday Alex! 🎂</p><p>The whole engineering team wanted to wish you a wonderful birthday today. You're an amazing team lead and it's a pleasure working with you every day.</p><p>There's a cake in the kitchen on the 4th floor — come grab a slice whenever you're ready. We'll do a brief celebration at 3pm if you're up for it!</p><p>Hope you have a fantastic day.</p><p>With appreciation,<br>Jennifer and the Engineering Team</p>",
+      "timestamp": "2026-02-24T09:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-029",
+      "replyToId": null
+    },
+    {
+      "id": "email-030",
+      "subject": "API Rate Limit Exceeded - Action Required",
+      "from": {
+        "name": "Automated Alerts",
+        "email": "alerts@monitoring.contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p><strong>WARNING ALERT</strong></p><p>The external payment API rate limit has been exceeded.</p><p><strong>Alert Details:</strong></p><ul><li>Service: Payment Gateway API (Stripe)</li><li>Endpoint: /v1/charges</li><li>Rate Limit: 100 req/sec</li><li>Current Rate: 147 req/sec</li><li>Alert Time: 2026-02-28 15:23 UTC</li></ul><p>Requests are being queued and some are failing with 429 errors. This may be impacting checkout for users. Investigate immediately.</p><p>Monitoring System</p>",
+      "timestamp": "2026-02-28T15:23:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-030",
+      "replyToId": null
+    },
+    {
+      "id": "email-031",
+      "subject": "Re: New Employee Onboarding - Welcome Package",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "HR Department",
+          "email": "hr@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi HR Team,</p><p>Thanks for the heads up. I'll make sure Priya and Dan have their workstations ready and I'll schedule orientation meetings for Monday morning.</p><p>One question: will they need temporary badges or will their access cards be ready on day one?</p><p>Best,<br>Alex</p>",
+      "timestamp": "2026-03-02T15:00:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-004",
+      "replyToId": "email-004"
+    },
+    {
+      "id": "email-032",
+      "subject": "Engineering All-Hands Recap - February 2026",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Team,</p><p>Great all-hands meeting yesterday! Here's the recap for anyone who missed it or wants to reference the key points:</p><p><strong>Key Announcements:</strong></p><ul><li>Q1 OKRs are on track — 78% completion rate</li><li>New CI/CD pipeline goes live March 10th — expect 40% faster deployments</li><li>Engineering headcount approved: 2 new hires in Q2</li><li>Tech debt sprint scheduled for last week of March</li></ul><p><strong>Action Items:</strong></p><ul><li>All teams: Update JIRA tickets with March milestones by EOW</li><li>Team leads: Submit Q2 hiring plans by March 15th</li></ul><p>Slides are in the shared drive under /Engineering/AllHands/Feb2026.</p><p>Alex</p>",
+      "timestamp": "2026-02-26T10:00:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-032",
+      "replyToId": null
+    },
+    {
+      "id": "email-033",
+      "subject": "Re: Interview Feedback Needed: Frontend Candidate",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Rachel Green",
+          "email": "rachel.green@contoso.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Linda Chen",
+          "email": "linda.chen@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Rachel,</p><p>Just submitted my scorecard in Greenhouse. Short summary: Yuki is a strong candidate. Solid React knowledge, wrote clean TypeScript during the coding challenge, and asked great architecture questions.</p><p>My recommendation is to proceed with an offer. Happy to discuss on a call if needed.</p><p>Alex</p>",
+      "timestamp": "2026-03-04T08:50:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-025",
+      "replyToId": "email-025"
+    },
+    {
+      "id": "email-034",
+      "subject": "Updated Roadmap - Q2 2026",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Sarah Mitchell",
+          "email": "sarah.mitchell@contoso.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Jennifer Park",
+          "email": "jennifer.park@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Sarah,</p><p>Attaching the updated Q2 2026 roadmap as requested. Key highlights:</p><ul><li>April: Mobile app v3.0 release</li><li>May: Infrastructure migration completion</li><li>June: New developer portal launch</li></ul><p>The main risk is the infrastructure migration — it's dependent on the Project Phoenix completion in March. Let me know if you want to discuss.</p><p>Alex</p>",
+      "timestamp": "2026-02-25T11:00:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-034",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Q2_2026_Roadmap.pptx",
+          "size": 2097152
+        }
+      ]
+    },
+    {
+      "id": "email-035",
+      "subject": "Performance Review Self-Assessment Draft",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>[DRAFT - Do not send]</p><p>Key accomplishments this year:</p><ul><li>Led migration of payment service to microservices architecture - reduced latency by 35%</li><li>Hired and onboarded 3 engineers (Priya, Daniel, Marcus)</li><li>Shipped Project Atlas on time and under budget</li><li>Improved test coverage from 61% to 89% across the platform</li></ul><p>Areas for growth:</p><ul><li>Better cross-team communication during high-pressure sprints</li><li>Delegating more effectively - tendency to go hands-on when I should stay strategic</li></ul><p>Goals for next year:</p><ul><li>Complete AWS Solutions Architect certification</li><li>Mentor 2 junior engineers for promotion</li></ul>",
+      "timestamp": "2026-03-02T20:00:00Z",
+      "folder": "drafts",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-035",
+      "replyToId": null
+    },
+    {
+      "id": "email-036",
+      "subject": "Re: Team Lunch Friday - RSVP",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Rachel Green",
+          "email": "rachel.green@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Rachel,</p><p>Count me in! Looking forward to it. I'll be there at 12:30.</p><p>Also happy to help coordinate if you need a head count from the team.</p><p>Alex</p>",
+      "timestamp": "2026-03-01T16:00:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-007",
+      "replyToId": "email-007"
+    },
+    {
+      "id": "email-037",
+      "subject": "Draft: Budget Justification for New Hardware",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Sarah Mitchell",
+          "email": "sarah.mitchell@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>[DRAFT]</p><p>Hi Sarah,</p><p>I'd like to request budget approval for new development hardware for the engineering team.</p><p><strong>Requested Items:</strong></p><ul><li>4x MacBook Pro M4 Max (replace 4-year-old machines) — $3,200 each = $12,800</li><li>8x 4K external monitors — $450 each = $3,600</li><li>2x NAS devices for local backup — $800 each = $1,600</li></ul><p><strong>Total: $18,000</strong></p><p>ROI justification: The new machines should reduce build times by ~60%, saving approximately 2 developer-hours per day across the team.</p>",
+      "timestamp": "2026-03-03T08:00:00Z",
+      "folder": "drafts",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-037",
+      "replyToId": null
+    },
+    {
+      "id": "email-038",
+      "subject": "Incident Report: Production Outage March 2",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Sarah Mitchell",
+          "email": "sarah.mitchell@contoso.com"
+        },
+        {
+          "name": "Linda Chen",
+          "email": "linda.chen@contoso.com"
+        }
+      ],
+      "body": "<p>Team,</p><p>Here is the post-incident report for yesterday's production outage.</p><p><strong>Timeline:</strong></p><ul><li>11:27 UTC: web-prod-03 stops responding</li><li>11:42 UTC: Alert fired, auto-failover to web-prod-04 triggered</li><li>12:15 UTC: Root cause identified: memory leak in v2.8.1 release</li><li>12:48 UTC: Rolled back to v2.8.0, service restored</li></ul><p><strong>Root Cause:</strong> Memory leak in the new request caching layer introduced in v2.8.1.</p><p><strong>Action Items:</strong></p><ul><li>Fix memory leak (Marcus, by March 6th)</li><li>Add memory alerting at 80% threshold (Daniel, by March 5th)</li><li>Update deployment checklist to include memory profile test</li></ul><p>Alex</p>",
+      "timestamp": "2026-03-04T08:55:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-038",
+      "replyToId": null
+    },
+    {
+      "id": "email-039",
+      "subject": "Referral: Senior Engineer Candidate - Jake Morrison",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Rachel Green",
+          "email": "rachel.green@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Rachel,</p><p>I'm referring a former colleague for the Senior Engineer opening. His name is Jake Morrison — we worked together at my previous company for 3 years.</p><p>Jake is a strong backend engineer with expertise in distributed systems and Go. He was the tech lead on their event streaming platform. His LinkedIn is linkedin.com/in/jake-morrison-eng.</p><p>I'd highly recommend giving him a look. Happy to do an initial phone screen if that would help move things along.</p><p>Alex</p>",
+      "timestamp": "2026-02-27T14:00:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-039",
+      "replyToId": null
+    },
+    {
+      "id": "email-040",
+      "subject": "Notes from 1:1 with Marcus - March 2",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>[DRAFT - personal notes]</p><p>1:1 with Marcus Thompson - March 2, 2026</p><p><strong>What he's working on:</strong><br>Mainly the Phoenix API layer. Feeling good about the timeline but nervous about the legacy integration. Might need extra support Thursday.</p><p><strong>Concerns he raised:</strong><br>Team morale seems a bit low — long sprint, lots of alerts. Consider doing a team retrospective and maybe a half-day off after Phoenix ships.</p><p><strong>Career development:</strong><br>Marcus is interested in a Staff Engineer path. Review with Linda about leveling criteria. Consider giving him more architecture ownership on Q2 projects.</p><p><strong>Action items for me:</strong><br>- Send Marcus the Staff Eng leveling doc<br>- Schedule team retro for March 20th</p>",
+      "timestamp": "2026-03-02T19:30:00Z",
+      "folder": "drafts",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-040",
+      "replyToId": null
+    },
+    {
+      "id": "email-041",
+      "subject": "You've won a $1000 gift card!",
+      "from": {
+        "name": "Rewards Center",
+        "email": "winner@prizenotify.net"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Congratulations! You have been selected as our lucky winner this week!</p><p>Click below to claim your $1000 Amazon gift card. This offer expires in 24 hours!</p><p>CLAIM YOUR PRIZE NOW &gt;&gt;</p><p>This is not a scam! You are a genuine winner. Act now!</p>",
+      "timestamp": "2026-03-02T03:00:00Z",
+      "folder": "junk",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-041",
+      "replyToId": null
+    },
+    {
+      "id": "email-042",
+      "subject": "Hot single developers in your area!",
+      "from": {
+        "name": "MeetDevs",
+        "email": "noreply@meetdevs-dating.biz"
+      },
+      "to": [
+        {
+          "name": "alex.johnson@outlook.com",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Find your perfect coding partner tonight! Browse thousands of developer profiles near you.</p><p>Click here to sign up FREE and meet developers who share your passion for code!</p><p>To unsubscribe, click here.</p>",
+      "timestamp": "2026-03-01T22:00:00Z",
+      "folder": "junk",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-042",
+      "replyToId": null
+    },
+    {
+      "id": "email-043",
+      "subject": "Your package requires additional fees",
+      "from": {
+        "name": "FedEx Delivery",
+        "email": "delivery@fedex-customs-fees.net"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Dear customer,</p><p>Your package is being held at our facility. It requires a customs clearance fee of $9.95 before we can deliver it to you.</p><p>Please pay within 48 hours using the link below or your package will be returned to sender.</p><p>Pay now: [fake-link-here]</p>",
+      "timestamp": "2026-02-28T14:00:00Z",
+      "folder": "junk",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-043",
+      "replyToId": null
+    },
+    {
+      "id": "email-044",
+      "subject": "Old Sprint 22 Planning Notes",
+      "from": {
+        "name": "Jennifer Park",
+        "email": "jennifer.park@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Team,</p><p>Attaching the Sprint 22 planning notes for reference. Sprint 22 is now closed — these notes are for historical record only.</p><p>Key velocity metrics: 42 story points completed out of 45 planned.</p><p>Jennifer</p>",
+      "timestamp": "2026-02-01T10:00:00Z",
+      "folder": "deleted",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-044",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Sprint22_Planning_Notes.pdf",
+          "size": 131072
+        }
+      ]
+    },
+    {
+      "id": "email-045",
+      "subject": "Expired: Free Trial - DesignTool Pro",
+      "from": {
+        "name": "DesignTool Pro",
+        "email": "noreply@designtoolpro.io"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>Your 14-day free trial of DesignTool Pro has expired. We hope you enjoyed exploring the tool!</p><p>To continue, upgrade to a paid plan starting at $12/month.</p><p>If you have any questions, reply to this email or visit our help center.</p>",
+      "timestamp": "2026-02-15T09:00:00Z",
+      "folder": "deleted",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-045",
+      "replyToId": null
+    },
+    {
+      "id": "email-046",
+      "subject": "Deployment Notification: v2.8.1 to Production",
+      "from": {
+        "name": "CI/CD Pipeline",
+        "email": "cicd@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Deployment completed successfully.</p><p><strong>Details:</strong></p><ul><li>Version: v2.8.1</li><li>Environment: Production</li><li>Deployed by: Marcus Thompson</li><li>Time: 2026-03-02 09:10 UTC</li><li>Status: Success</li><li>Health check: Passed</li></ul><p>Rollback available for 24 hours via the deployment portal.</p>",
+      "timestamp": "2026-03-02T09:10:00Z",
+      "folder": "deleted",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-046",
+      "replyToId": null
+    },
+    {
+      "id": "email-047",
+      "subject": "Coffee Catchup - Can we move to 2pm?",
+      "from": {
+        "name": "Alicia Wang",
+        "email": "alicia.wang@startupxyz.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex!</p><p>Hope you're well. Quick note — something came up and I need to push our coffee chat tomorrow. Could we do 2pm instead of 11am?</p><p>Let me know!</p><p>Alicia</p>",
+      "timestamp": "2026-03-01T16:00:00Z",
+      "folder": "deleted",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": true,
+      "conversationId": "conv-047",
+      "replyToId": null
+    },
+    {
+      "id": "email-048",
+      "subject": "Re: Q4 Budget Review - Action Required",
+      "from": {
+        "name": "Alex Johnson",
+        "email": "alex.johnson@outlook.com"
+      },
+      "to": [
+        {
+          "name": "Sarah Mitchell",
+          "email": "sarah.mitchell@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Sarah,</p><p>I've reviewed the Q4 figures. I agree that marketing and travel are concerns. I'll set up time with the respective team leads this week to discuss mitigation. I'll have my sign-off to you by Thursday.</p><p>Alex</p>",
+      "timestamp": "2026-03-04T08:48:00Z",
+      "folder": "sent",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-001",
+      "replyToId": "email-001"
+    },
+    {
+      "id": "email-049",
+      "subject": "Quarterly Tech Radar Update",
+      "from": {
+        "name": "CTO Office",
+        "email": "cto-office@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Leads",
+          "email": "eng-leads@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Engineering Leads,</p><p>The Q1 2026 Tech Radar update is now available on the internal wiki.</p><p><strong>Notable movements:</strong></p><ul><li>ADOPT: Deno, Bun, Rust for systems code</li><li>TRIAL: Temporal workflow engine, OpenTelemetry</li><li>ASSESS: WebAssembly for edge compute, AI-assisted code review</li><li>HOLD: jQuery (legacy support only), REST for new internal services (use gRPC)</li></ul><p>Please review and factor into your Q2 technical decisions.</p><p>CTO Office</p>",
+      "timestamp": "2026-02-20T10:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-049",
+      "replyToId": null
+    },
+    {
+      "id": "email-050",
+      "subject": "Team OKR Check-in Required",
+      "from": {
+        "name": "Sarah Mitchell",
+        "email": "sarah.mitchell@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>It's that time again — Q1 OKR check-in is due by March 6th. Please log your team's progress in the OKR tool (Lattice) by end of week.</p><p>Your team's Q1 OKRs to update:</p><ul><li>O1: Improve platform reliability to 99.9% uptime — Current: 99.7%</li><li>O2: Reduce deployment lead time by 30% — Current: 18% improvement</li><li>O3: Achieve 90% test coverage — Current: 89%</li></ul><p>Looking good overall. Keep it up!</p><p>Sarah</p>",
+      "timestamp": "2026-03-04T06:09:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-050",
+      "replyToId": null
+    },
+    {
+      "id": "email-051",
+      "subject": "Marcus Thompson mentioned you in a comment",
+      "from": {
+        "name": "Jira",
+        "email": "jira@contoso.atlassian.net"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Marcus Thompson mentioned you in a comment on PHOE-142: API Gateway Race Condition Fix.</p><p><strong>Comment:</strong></p><p>\"@Alex - I pushed the fix. Race condition was caused by unguarded concurrent writes to the request cache. Added a mutex lock. Can you review when you get a chance? Tests pass but I want a second pair of eyes before merging to main.\"</p><p>View the issue in Jira.</p>",
+      "timestamp": "2026-03-04T06:02:00Z",
+      "folder": "archive",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-051",
+      "replyToId": null
+    },
+    {
+      "id": "email-052",
+      "subject": "Accessibility Audit Results - Platform v2.8",
+      "from": {
+        "name": "Priya Sharma",
+        "email": "priya.sharma@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Jennifer Park",
+          "email": "jennifer.park@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>I ran the WCAG 2.1 AA accessibility audit on the v2.8 platform as discussed. Here are the results:</p><p><strong>Issues found: 23 total</strong></p><ul><li>Critical (4): Missing alt text on 3 images, 1 form without label</li><li>Major (9): Color contrast failures in 6 components, 3 keyboard navigation issues</li><li>Minor (10): Various ARIA role inconsistencies</li></ul><p>I've logged all issues in Jira under the WCAG-2026 epic. Estimated remediation: ~18 hours of work.</p><p>I'd recommend addressing the Critical issues in the next sprint. Let me know your thoughts.</p><p>Priya</p>",
+      "timestamp": "2026-03-04T08:45:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-052",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Accessibility_Audit_Report_v2.8.pdf",
+          "size": 892928
+        },
+        {
+          "name": "WCAG_Violations_List.xlsx",
+          "size": 61440
+        }
+      ]
+    },
+    {
+      "id": "email-053",
+      "subject": "Weekly Platform Metrics Report – Feb 24–Mar 1",
+      "from": {
+        "name": "DataOps Team",
+        "email": "dataops@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Leads",
+          "email": "eng-leads@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Engineering Leads,</p><p>Here is this week's platform performance summary.</p><p><strong>Traffic &amp; Availability</strong></p><table border='1' cellpadding='4'><tr><th>Metric</th><th>This Week</th><th>Last Week</th><th>Change</th></tr><tr><td>Total Requests</td><td>14,208,341</td><td>13,762,190</td><td>+3.2%</td></tr><tr><td>Avg Response Time (p50)</td><td>128 ms</td><td>134 ms</td><td>-4.5%</td></tr><tr><td>Avg Response Time (p99)</td><td>874 ms</td><td>921 ms</td><td>-5.1%</td></tr><tr><td>Error Rate (5xx)</td><td>0.31%</td><td>0.22%</td><td>+0.09 pp</td></tr><tr><td>Uptime</td><td>99.72%</td><td>99.98%</td><td>-0.26 pp</td></tr></table><p><strong>Top Error Endpoints</strong></p><table border='1' cellpadding='4'><tr><th>Endpoint</th><th>5xx Count</th><th>Error Rate</th></tr><tr><td>POST /api/v2/charges</td><td>18,402</td><td>2.14%</td></tr><tr><td>GET /api/v2/users/{id}/profile</td><td>9,871</td><td>0.68%</td></tr><tr><td>PUT /api/v2/orders/{id}</td><td>7,204</td><td>0.53%</td></tr><tr><td>GET /api/v2/search</td><td>4,119</td><td>0.29%</td></tr><tr><td>POST /api/v2/auth/token</td><td>2,547</td><td>0.18%</td></tr></table><p><strong>Infrastructure Costs (Week-over-Week)</strong></p><ul><li>Compute (EC2/ECS): $4,218 (+$312 vs last week)</li><li>Storage (S3 + EBS): $1,847 (+$89)</li><li>Data Transfer: $623 (-$41)</li><li>Database (RDS): $2,109 (flat)</li><li><strong>Total: $8,797</strong> (+$360, +4.3%)</li></ul><p>The 5xx spike on /api/v2/charges correlates with the rate-limit alert earlier this week. Marcus's fix has been deployed; we expect this to normalize.</p><p>Full dashboard: <a>https://grafana.contoso.com/d/platform-weekly</a></p><p>DataOps Team</p>",
+      "timestamp": "2026-03-02T07:00:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-053",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Platform_Metrics_W09_2026.csv",
+          "size": 524288
+        },
+        {
+          "name": "Error_Breakdown_W09.xlsx",
+          "size": 184320
+        }
+      ]
+    },
+    {
+      "id": "email-054",
+      "subject": "A/B Test Results: Checkout Flow Redesign (Experiment CKO-42)",
+      "from": {
+        "name": "Analytics Team",
+        "email": "analytics@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Nina Ross",
+          "email": "nina.ross@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Experiment CKO-42 (Checkout Flow Redesign) concluded yesterday. Here are the final results after 14 days and 38,412 unique visitors.</p><p><strong>Primary Metric: Checkout Completion Rate</strong></p><table border='1' cellpadding='4'><tr><th>Variant</th><th>Users</th><th>Conversions</th><th>Rate</th><th>Lift</th><th>p-value</th></tr><tr><td>Control (A)</td><td>19,187</td><td>2,303</td><td>12.0%</td><td>—</td><td>—</td></tr><tr><td>Variant B (2-step)</td><td>19,225</td><td>2,788</td><td>14.5%</td><td>+20.8%</td><td>0.0003</td></tr></table><p><strong>Secondary Metrics</strong></p><table border='1' cellpadding='4'><tr><th>Metric</th><th>Control</th><th>Variant B</th><th>Change</th></tr><tr><td>Avg Order Value</td><td>$67.40</td><td>$66.10</td><td>-1.9% (n.s.)</td></tr><tr><td>Cart Abandonment</td><td>34.2%</td><td>28.7%</td><td>-5.5 pp</td></tr><tr><td>Time to Complete</td><td>4m 12s</td><td>2m 48s</td><td>-33.3%</td></tr><tr><td>Payment Error Rate</td><td>1.8%</td><td>1.7%</td><td>-0.1 pp (n.s.)</td></tr><tr><td>Return Rate (7-day)</td><td>6.1%</td><td>5.9%</td><td>-0.2 pp (n.s.)</td></tr></table><p><strong>Revenue Impact Estimate:</strong> +$43,200/month in recovered conversions at current traffic levels.</p><p><strong>Recommendation:</strong> Ship Variant B to 100%. The improvement is statistically significant (p &lt; 0.001) and economically meaningful. No negative impact on AOV or returns.</p><p>Full analysis notebook: <a>https://jupyter.contoso.com/cko-42-final</a></p><p>Analytics Team</p>",
+      "timestamp": "2026-03-03T14:30:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": true,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-054",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "CKO42_AB_Test_Full_Report.pdf",
+          "size": 1572864
+        },
+        {
+          "name": "CKO42_Raw_Data.csv",
+          "size": 8388608
+        }
+      ]
+    },
+    {
+      "id": "email-055",
+      "subject": "Monthly SLA Report – February 2026",
+      "from": {
+        "name": "SRE Team",
+        "email": "sre@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Leads",
+          "email": "eng-leads@contoso.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Tom Nguyen",
+          "email": "tom.nguyen@contoso.com"
+        }
+      ],
+      "body": "<p>Team,</p><p>February 2026 SLA performance report.</p><p><strong>Service Level Summary</strong></p><table border='1' cellpadding='4'><tr><th>Service</th><th>SLA Target</th><th>Actual</th><th>Status</th><th>Budget Remaining</th></tr><tr><td>API Gateway</td><td>99.95%</td><td>99.91%</td><td style='color:red;'>MISSED</td><td>-17.3 min</td></tr><tr><td>Web Application</td><td>99.9%</td><td>99.72%</td><td style='color:red;'>MISSED</td><td>-118.1 min</td></tr><tr><td>Database Cluster</td><td>99.99%</td><td>99.997%</td><td style='color:green;'>MET</td><td>+1.3 min</td></tr><tr><td>CDN</td><td>99.95%</td><td>99.98%</td><td style='color:green;'>MET</td><td>+12.9 min</td></tr><tr><td>Auth Service</td><td>99.95%</td><td>99.96%</td><td style='color:green;'>MET</td><td>+4.3 min</td></tr></table><p><strong>Incident Summary</strong></p><table border='1' cellpadding='4'><tr><th>Incident</th><th>Duration</th><th>Impact</th><th>Root Cause</th></tr><tr><td>INC-2026-0218 (Feb 14)</td><td>23 min</td><td>API Gateway 503s</td><td>Config rollout error</td></tr><tr><td>INC-2026-0227 (Feb 27)</td><td>0 min</td><td>Near-miss: DB failover</td><td>Disk IOPS spike</td></tr><tr><td>INC-2026-0302 (Mar 2)</td><td>81 min</td><td>web-prod-03 outage</td><td>Memory leak v2.8.1</td></tr></table><p><strong>Key Takeaway:</strong> The March 2 incident on web-prod-03 consumed 81 minutes of SLA budget, causing both the API Gateway and Web Application SLAs to breach. Error budget for Q1 is now exhausted for these two services — any further incidents will require an executive review.</p><p>SRE Team</p>",
+      "timestamp": "2026-03-03T08:15:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-055",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "SLA_Report_Feb2026.pdf",
+          "size": 409600
+        }
+      ]
+    },
+    {
+      "id": "email-056",
+      "subject": "Q4 Revenue Dashboard – Final Numbers",
+      "from": {
+        "name": "Sarah Mitchell",
+        "email": "sarah.mitchell@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Leads",
+          "email": "eng-leads@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Engineering Leads,</p><p>Sharing the final Q4 2025 revenue breakdown so you can tie it back to feature work.</p><p><strong>Revenue by Product Line</strong></p><table border='1' cellpadding='4'><tr><th>Product</th><th>Q3 Revenue</th><th>Q4 Revenue</th><th>QoQ Growth</th></tr><tr><td>Platform (Core)</td><td>$2,341,000</td><td>$2,612,000</td><td>+11.6%</td></tr><tr><td>Mobile App</td><td>$891,000</td><td>$1,024,000</td><td>+14.9%</td></tr><tr><td>Enterprise API</td><td>$1,567,000</td><td>$1,738,000</td><td>+10.9%</td></tr><tr><td>Developer Portal</td><td>$234,000</td><td>$312,000</td><td>+33.3%</td></tr><tr><td><strong>Total</strong></td><td><strong>$5,033,000</strong></td><td><strong>$5,686,000</strong></td><td><strong>+13.0%</strong></td></tr></table><p><strong>Top-Performing Features (by attributed revenue)</strong></p><ol><li>One-click checkout (Project Atlas) — $218K incremental MRR</li><li>Real-time inventory sync — $142K incremental MRR</li><li>Advanced search with filters — $97K incremental MRR</li></ol><p><strong>Churn Impact:</strong> 14 enterprise accounts churned in Q4 ($187K ARR lost), primarily citing API rate limits and lack of webhook support. This validates the SCRUM-013 webhook delivery system task.</p><p>Full dashboard: <a>https://looker.contoso.com/q4-2025-rev</a></p><p>Sarah Mitchell<br>Finance Director</p>",
+      "timestamp": "2026-02-27T15:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-056",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Q4_2025_Revenue_Dashboard.xlsx",
+          "size": 1048576
+        },
+        {
+          "name": "Churn_Analysis_Q4.pdf",
+          "size": 327680
+        }
+      ]
+    },
+    {
+      "id": "email-057",
+      "subject": "CI/CD Pipeline Health – Sprint 23 Summary",
+      "from": {
+        "name": "CI/CD Pipeline",
+        "email": "cicd@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Engineering Team",
+          "email": "engineering@contoso.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Sprint 23 CI/CD metrics (Feb 17 – Mar 1)</p><p><strong>Build &amp; Deploy Stats</strong></p><table border='1' cellpadding='4'><tr><th>Metric</th><th>Sprint 23</th><th>Sprint 22</th><th>Change</th></tr><tr><td>Total Builds</td><td>347</td><td>312</td><td>+11.2%</td></tr><tr><td>Build Success Rate</td><td>94.8%</td><td>96.2%</td><td>-1.4 pp</td></tr><tr><td>Avg Build Time</td><td>8m 42s</td><td>9m 11s</td><td>-5.3%</td></tr><tr><td>Deployments to Staging</td><td>89</td><td>74</td><td>+20.3%</td></tr><tr><td>Deployments to Production</td><td>12</td><td>9</td><td>+33.3%</td></tr><tr><td>Rollbacks</td><td>2</td><td>0</td><td>+2</td></tr><tr><td>Mean Lead Time</td><td>3h 14m</td><td>3h 47m</td><td>-14.5%</td></tr></table><p><strong>Flaky Test Report (Top 5)</strong></p><table border='1' cellpadding='4'><tr><th>Test</th><th>Flake Rate</th><th>Last Flake</th></tr><tr><td>test_payment_webhook_retry</td><td>18.4%</td><td>Mar 1</td></tr><tr><td>test_search_indexer_timeout</td><td>12.1%</td><td>Feb 28</td></tr><tr><td>test_auth_token_refresh_race</td><td>9.7%</td><td>Feb 27</td></tr><tr><td>test_image_upload_large_file</td><td>7.3%</td><td>Feb 26</td></tr><tr><td>test_notification_delivery_order</td><td>5.2%</td><td>Feb 25</td></tr></table><p>The 2 rollbacks (v2.8.1 memory leak + a CSS regression) brought our change failure rate to 16.7%. Target is &lt;10%.</p><p>CI/CD Pipeline System</p>",
+      "timestamp": "2026-03-02T04:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": false,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-057",
+      "replyToId": null
+    },
+    {
+      "id": "email-058",
+      "subject": "User Research Summary: Enterprise Onboarding Friction",
+      "from": {
+        "name": "Nina Ross",
+        "email": "nina.ross@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Jennifer Park",
+          "email": "jennifer.park@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Finished the enterprise onboarding research study. We interviewed 8 customers and ran 12 usability sessions. Here are the findings.</p><p><strong>Task Completion Rates (Unmoderated Testing)</strong></p><table border='1' cellpadding='4'><tr><th>Task</th><th>Success Rate</th><th>Avg Time</th><th>Severity</th></tr><tr><td>Create first API key</td><td>92%</td><td>1m 34s</td><td>Low</td></tr><tr><td>Set up webhook endpoint</td><td>41%</td><td>7m 22s</td><td>Critical</td></tr><tr><td>Configure SSO (SAML)</td><td>33%</td><td>12m 05s</td><td>Critical</td></tr><tr><td>Invite team members</td><td>88%</td><td>2m 11s</td><td>Low</td></tr><tr><td>Generate test transaction</td><td>67%</td><td>4m 48s</td><td>Medium</td></tr><tr><td>View billing dashboard</td><td>96%</td><td>0m 42s</td><td>Low</td></tr></table><p><strong>NPS Breakdown (n=47 enterprise customers)</strong></p><ul><li>Promoters (9-10): 19 (40.4%)</li><li>Passives (7-8): 16 (34.0%)</li><li>Detractors (0-6): 12 (25.5%)</li><li><strong>NPS Score: +15</strong> (down from +28 last quarter)</li></ul><p><strong>Top Pain Points (by mention frequency)</strong></p><ol><li>Webhook setup too complex — 7/8 interviewees</li><li>SSO documentation outdated — 6/8</li><li>No sandbox environment for testing — 5/8</li><li>Rate limit errors unclear — 4/8</li><li>Billing page loads slowly — 3/8</li></ol><p>I strongly recommend prioritizing webhook setup UX and SSO documentation in the next sprint. These directly correlate with the Q4 churn data Sarah shared.</p><p>Full report and session recordings in the research drive.</p><p>Nina Ross<br>UX Research Lead</p>",
+      "timestamp": "2026-03-03T11:00:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-058",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Enterprise_Onboarding_Research_Report.pdf",
+          "size": 2621440
+        },
+        {
+          "name": "Usability_Test_Raw_Data.xlsx",
+          "size": 716800
+        }
+      ]
+    },
+    {
+      "id": "email-059",
+      "subject": "Database Performance Report – February 2026",
+      "from": {
+        "name": "Daniel Lee",
+        "email": "daniel.lee@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Marcus Thompson",
+          "email": "marcus.thompson@contoso.com"
+        }
+      ],
+      "body": "<p>Alex,</p><p>Before I go on PTO — here's the February database performance report. A few things need attention.</p><p><strong>Query Performance (RDS PostgreSQL 12)</strong></p><table border='1' cellpadding='4'><tr><th>Query Category</th><th>Avg Latency</th><th>p95 Latency</th><th>Call Count</th><th>% of Total Time</th></tr><tr><td>User Lookups</td><td>2.1 ms</td><td>8.4 ms</td><td>8,412,000</td><td>12.3%</td></tr><tr><td>Order Queries</td><td>14.7 ms</td><td>89.2 ms</td><td>2,108,000</td><td>21.6%</td></tr><tr><td>Search (full-text)</td><td>47.3 ms</td><td>312 ms</td><td>891,000</td><td>29.4%</td></tr><tr><td>Analytics Aggregation</td><td>234 ms</td><td>1,842 ms</td><td>47,200</td><td>7.7%</td></tr><tr><td>Report Generation</td><td>1,247 ms</td><td>8,912 ms</td><td>3,100</td><td>2.7%</td></tr></table><p><strong>Storage &amp; Connections</strong></p><table border='1' cellpadding='4'><tr><th>Metric</th><th>Current</th><th>30-Day Trend</th><th>Limit</th></tr><tr><td>Total DB Size</td><td>487 GB</td><td>+18 GB/month</td><td>1 TB</td></tr><tr><td>Largest Table (orders)</td><td>142 GB</td><td>+6.2 GB/month</td><td>—</td></tr><tr><td>Active Connections</td><td>84</td><td>+12 avg</td><td>200</td></tr><tr><td>Connection Pool Utilization</td><td>68%</td><td>+8 pp</td><td>100%</td></tr><tr><td>Replication Lag</td><td>0.3s</td><td>Stable</td><td>10s</td></tr></table><p><strong>Action Items:</strong></p><ol><li>The <code>orders</code> table needs partitioning — recommend by month. At current growth, we'll hit performance issues in ~4 months.</li><li>Full-text search queries are our heaviest workload (29.4% of time). Validates the Elasticsearch migration (SCRUM-009).</li><li>Connection pool is trending up — consider PgBouncer before we hit 80%.</li></ol><p>Marcus — can you take a look at the analytics aggregation queries? They've gotten 3x slower since v2.7.</p><p>Daniel</p>",
+      "timestamp": "2026-02-28T17:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": true,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-059",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "DB_Performance_Feb2026.pdf",
+          "size": 614400
+        },
+        {
+          "name": "Slow_Query_Log_Top50.csv",
+          "size": 245760
+        }
+      ]
+    },
+    {
+      "id": "email-060",
+      "subject": "Customer Support Escalation Trends – Week 9",
+      "from": {
+        "name": "Jordan Lee",
+        "email": "jordan.lee@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Alex,</p><p>Weekly escalation summary from the customer success team.</p><p><strong>Ticket Volume (Mar 24–Mar 1)</strong></p><table border='1' cellpadding='4'><tr><th>Category</th><th>Tickets</th><th>Avg Resolution</th><th>SLA Breaches</th></tr><tr><td>Authentication Issues</td><td>47</td><td>2.3 hours</td><td>3</td></tr><tr><td>Payment Failures</td><td>31</td><td>4.1 hours</td><td>7</td></tr><tr><td>API Rate Limits</td><td>28</td><td>1.8 hours</td><td>1</td></tr><tr><td>Data Export Errors</td><td>19</td><td>6.7 hours</td><td>5</td></tr><tr><td>Account Access</td><td>14</td><td>1.2 hours</td><td>0</td></tr><tr><td>Other</td><td>22</td><td>3.4 hours</td><td>2</td></tr><tr><td><strong>Total</strong></td><td><strong>161</strong></td><td><strong>3.1 hours</strong></td><td><strong>18</strong></td></tr></table><p><strong>Trends:</strong></p><ul><li>Payment failure tickets up 82% week-over-week — correlates with the Stripe rate-limit incident</li><li>Data export errors are a new category — 15 of the 19 tickets cite the same timeout on exports &gt; 50K rows</li><li>Auth issues stable but SLA breach rate increased (3 breaches vs 0 last week)</li></ul><p><strong>Top Enterprise Escalations:</strong></p><ol><li>Acme Corp (ARR: $124K) — frustrated with repeated 429 errors; threatened to evaluate competitors</li><li>GlobalTech Inc (ARR: $89K) — data export consistently timing out; blocking their quarterly audit</li><li>Finova Partners (ARR: $67K) — SSO integration broken after our Feb 20 update</li></ol><p>The Acme Corp situation is urgent. Can we discuss today?</p><p>Jordan Lee<br>Customer Success Manager</p>",
+      "timestamp": "2026-03-03T09:30:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": true,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-060",
+      "replyToId": null
+    },
+    {
+      "id": "email-061",
+      "subject": "Dependency Audit Report – March 2026",
+      "from": {
+        "name": "Priya Sharma",
+        "email": "priya.sharma@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [],
+      "body": "<p>Hi Alex,</p><p>I ran the quarterly dependency audit across all repos. Here's the summary.</p><p><strong>Dependency Health (All Repositories)</strong></p><table border='1' cellpadding='4'><tr><th>Repo</th><th>Total Deps</th><th>Outdated</th><th>Deprecated</th><th>Vulnerable</th></tr><tr><td>contoso/platform</td><td>247</td><td>38</td><td>3</td><td>5</td></tr><tr><td>contoso/mobile-app</td><td>189</td><td>24</td><td>1</td><td>2</td></tr><tr><td>contoso/infra-configs</td><td>42</td><td>8</td><td>0</td><td>0</td></tr><tr><td>contoso/data-pipeline</td><td>93</td><td>17</td><td>2</td><td>3</td></tr><tr><td><strong>Total</strong></td><td><strong>571</strong></td><td><strong>87</strong></td><td><strong>6</strong></td><td><strong>10</strong></td></tr></table><p><strong>Critical Vulnerabilities (must fix this sprint)</strong></p><table border='1' cellpadding='4'><tr><th>Package</th><th>Current</th><th>Fixed In</th><th>Severity</th><th>CVE</th></tr><tr><td>lodash</td><td>4.17.19</td><td>4.17.22</td><td>High</td><td>CVE-2025-11234</td></tr><tr><td>axios</td><td>1.4.0</td><td>1.6.2</td><td>High</td><td>CVE-2025-10891</td></tr><tr><td>jsonwebtoken</td><td>9.0.0</td><td>9.0.3</td><td>Critical</td><td>CVE-2025-12001</td></tr><tr><td>validator</td><td>13.9.0</td><td>13.12.0</td><td>Medium</td><td>CVE-2025-9876</td></tr><tr><td>pg</td><td>8.11.0</td><td>8.11.5</td><td>High</td><td>CVE-2025-11456</td></tr></table><p>The jsonwebtoken vulnerability is critical — it allows JWT signature bypass. We should patch this immediately since our auth module uses it directly.</p><p>I can create a PR for the platform repo if you approve. ETA: 2 hours, including test updates.</p><p>Priya</p>",
+      "timestamp": "2026-03-04T08:10:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": true,
+      "isExternal": false,
+      "conversationId": "conv-061",
+      "replyToId": null,
+      "attachments": [
+        {
+          "name": "Dependency_Audit_Mar2026.xlsx",
+          "size": 368640
+        }
+      ]
+    },
+    {
+      "id": "email-062",
+      "subject": "Hiring Pipeline Update – Engineering Q1",
+      "from": {
+        "name": "Rachel Green",
+        "email": "rachel.green@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Linda Chen",
+          "email": "linda.chen@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Your Q1 hiring pipeline update.</p><p><strong>Open Roles (Engineering Team)</strong></p><table border='1' cellpadding='4'><tr><th>Role</th><th>Opened</th><th>Applicants</th><th>Phone Screen</th><th>Onsite</th><th>Offer</th><th>Status</th></tr><tr><td>Senior Frontend</td><td>Jan 15</td><td>142</td><td>18</td><td>5</td><td>1 (Yuki Tanaka)</td><td>Offer pending</td></tr><tr><td>Senior Backend</td><td>Feb 1</td><td>98</td><td>12</td><td>3</td><td>0</td><td>Interviewing</td></tr><tr><td>DevOps Engineer</td><td>Feb 10</td><td>64</td><td>8</td><td>2</td><td>0</td><td>Interviewing</td></tr><tr><td>Staff Engineer</td><td>Mar 1</td><td>23</td><td>0</td><td>0</td><td>0</td><td>Sourcing</td></tr></table><p><strong>Pipeline Metrics</strong></p><ul><li>Avg time-to-fill (closed roles): 34 days</li><li>Avg time in current pipeline: 22 days</li><li>Interview-to-offer ratio: 4.2:1</li><li>Offer acceptance rate: 83% (5 of 6 offers YTD)</li><li>Referral percentage: 31% of applicants</li></ul><p><strong>Budget Status:</strong> $24,000 of $40,000 recruiting budget spent (60%). On track.</p><p>Let me know if you want to adjust job descriptions or prioritize any role.</p><p>Rachel Green<br>Technical Recruiter</p>",
+      "timestamp": "2026-03-03T16:00:00Z",
+      "folder": "inbox",
+      "read": true,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-062",
+      "replyToId": null
+    },
+    {
+      "id": "email-063",
+      "subject": "Auth Incident Recap - Temporary Signing Key Exposure",
+      "from": {
+        "name": "Priya Sharma",
+        "email": "priya.sharma@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Tom Nguyen",
+          "email": "tom.nguyen@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Quick recap from this morning's auth incident review.</p><p><strong>Impact Summary</strong></p><table border='1' cellpadding='4'><tr><th>Metric</th><th>Value</th></tr><tr><td>Exposure window</td><td>27 minutes</td></tr><tr><td>Sessions invalidated</td><td>14,200</td></tr><tr><td>Enterprise tenants impacted</td><td>3</td></tr><tr><td>Root cause</td><td>Temporary JWT signing key copied into a debug container</td></tr></table><p><strong>Immediate actions</strong></p><ol><li>Rotate the temporary signing key and invalidate all active sessions.</li><li>Patch the auth service after the jsonwebtoken CVE-2025-12001 upgrade lands.</li><li>Review tenant-by-tenant blast radius before sprint planning.</li></ol><p>I need a short triage slot before tech debt prioritization so we can decide what ships this sprint.</p><p>Priya</p>",
+      "timestamp": "2026-03-05T08:40:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-063",
+      "replyToId": null
+    },
+    {
+      "id": "email-064",
+      "subject": "Data Retention Audit Gaps - Q1",
+      "from": {
+        "name": "Maya Patel",
+        "email": "maya.patel@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Daniel Lee",
+          "email": "daniel.lee@contoso.com"
+        }
+      ],
+      "body": "<p>Alex,</p><p>Compliance finished the Q1 retention audit and there are a few gaps we need engineering to close.</p><p><strong>Audit Findings</strong></p><table border='1' cellpadding='4'><tr><th>Area</th><th>Finding</th></tr><tr><td>Tables over policy</td><td>14</td></tr><tr><td>Oldest export records retained</td><td>540 days</td></tr><tr><td>Policy target</td><td>365 days</td></tr><tr><td>EU deletion backlog</td><td>1,284 accounts</td></tr></table><p>The export snapshot tables are a major contributor to the orders footprint Daniel already flagged. Legal wants a cleanup plan before Q2 planning, especially for the EU deletion backlog.</p><p>Please send me timing for the remediation work once you've coordinated with engineering.</p><p>Maya</p>",
+      "timestamp": "2026-03-05T13:10:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-064",
+      "replyToId": null
+    },
+    {
+      "id": "email-065",
+      "subject": "Vendor Renewal Summary - Observability Stack",
+      "from": {
+        "name": "Linda Chen",
+        "email": "linda.chen@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Sarah Kim",
+          "email": "sarah.kim@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Finance and EngOps aligned on the next observability renewals and need a recommendation before the VP SLA review.</p><p><strong>Renewal Summary</strong></p><table border='1' cellpadding='4'><tr><th>Vendor</th><th>Renewal date</th><th>Annual cost</th><th>Change</th></tr><tr><td>Datadog infra + logs</td><td>Mar 31</td><td>$186,000</td><td>+18% YoY</td></tr><tr><td>FullStory</td><td>Apr 15</td><td>$72,000</td><td>Flat</td></tr><tr><td>PagerDuty</td><td>May 1</td><td>$48,000</td><td>Flat</td></tr></table><p>Current Datadog log ingest is 2.4 TB/day, so any cost-reduction plan probably means tighter retention or negotiated pricing. Let me know whether we should renegotiate first or reduce usage.</p><p>Linda</p>",
+      "timestamp": "2026-03-05T18:15:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-065",
+      "replyToId": null
+    },
+    {
+      "id": "email-066",
+      "subject": "Enterprise Expansion Forecast - Q2",
+      "from": {
+        "name": "Jordan Lee",
+        "email": "jordan.lee@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Nina Ross",
+          "email": "nina.ross@contoso.com"
+        }
+      ],
+      "body": "<p>Alex,</p><p>Sales Ops pulled together the Q2 expansion forecast and the biggest upside is tied directly to the onboarding issues Nina called out.</p><p><strong>At-Risk Expansion Opportunities</strong></p><table border='1' cellpadding='4'><tr><th>Account</th><th>Expansion value</th><th>Blocker</th></tr><tr><td>Northstar Bank</td><td>$210K</td><td>SSO/SAML onboarding still unreliable</td></tr><tr><td>HelioBank</td><td>$160K</td><td>Large export jobs still timing out</td></tr><tr><td>Acme Corp</td><td>Not booked in forecast</td><td>Watching the /charges incident fallout</td></tr></table><p>Nina's latest notes still show webhook completion at 41% and SSO/SAML success at 33%, which is why I think this needs a coordinated review before the March release plan locks.</p><p>Jordan</p>",
+      "timestamp": "2026-03-04T15:40:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-066",
+      "replyToId": null
+    },
+    {
+      "id": "email-067",
+      "subject": "March Launch Readiness Matrix",
+      "from": {
+        "name": "Sarah Kim",
+        "email": "sarah.kim@contoso.com"
+      },
+      "to": [
+        {
+          "name": "Alex Johnson",
+          "email": "alex.johnson@outlook.com"
+        }
+      ],
+      "cc": [
+        {
+          "name": "Nina Ross",
+          "email": "nina.ross@contoso.com"
+        },
+        {
+          "name": "Jordan Lee",
+          "email": "jordan.lee@contoso.com"
+        }
+      ],
+      "body": "<p>Hi Alex,</p><p>Here is the latest launch-readiness matrix for the March release.</p><p><strong>Open Launch Items</strong></p><table border='1' cellpadding='4'><tr><th>Workstream</th><th>Status</th><th>Notes</th></tr><tr><td>Localization checklist</td><td>82% complete</td><td>French and German screenshots still missing</td></tr><tr><td>Support runbook</td><td>Missing owner</td><td>No final escalation path for enterprise launch weekend</td></tr><tr><td>Payments rollback drill</td><td>Open</td><td>Waiting on sign-off from platform</td></tr><tr><td>Checkout experiment</td><td>Positive</td><td>CKO-42 still supports launch if blockers close</td></tr></table><p>If we can close the support and payments items, I think we can hold the current release date. Otherwise we should decide at a go/no-go review on March 5.</p><p>Sarah</p>",
+      "timestamp": "2026-03-04T18:30:00Z",
+      "folder": "inbox",
+      "read": false,
+      "flagged": false,
+      "pinned": false,
+      "focused": true,
+      "hasAttachment": false,
+      "isExternal": false,
+      "conversationId": "conv-067",
+      "replyToId": null
+    }
+  ],
+  "folders": [
+    {
+      "id": "inbox",
+      "name": "Inbox",
+      "icon": "inbox",
+      "count": 20
+    },
+    {
+      "id": "sent",
+      "name": "Sent Items",
+      "icon": "sent",
+      "count": 0
+    },
+    {
+      "id": "drafts",
+      "name": "Drafts",
+      "icon": "drafts",
+      "count": 3
+    },
+    {
+      "id": "deleted",
+      "name": "Deleted Items",
+      "icon": "deleted",
+      "count": 0
+    },
+    {
+      "id": "junk",
+      "name": "Junk Email",
+      "icon": "junk",
+      "count": 0
+    },
+    {
+      "id": "archive",
+      "name": "Archive",
+      "icon": "archive",
+      "count": 0
+    }
+  ],
+  "user": {
+    "name": "Alex Johnson",
+    "email": "alex.johnson@outlook.com",
+    "initials": "AJ"
+  },
+  "anchor": "2026-03-04T09:00:00Z",
+  "events": [
+    {
+      "id": "event-001",
+      "title": "Team Standup",
+      "date": "2026-02-23",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-002",
+      "title": "Product Roadmap Review",
+      "date": "2026-02-23",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "allDay": false,
+      "location": "Conf Room B",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "priya.patel@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-003",
+      "title": "Team Standup",
+      "date": "2026-02-24",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-004",
+      "title": "1:1 with Sarah",
+      "date": "2026-02-24",
+      "startTime": "11:00",
+      "endTime": "11:30",
+      "allDay": false,
+      "location": "",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-005",
+      "title": "Lunch with Design Team",
+      "date": "2026-02-25",
+      "startTime": "12:00",
+      "endTime": "13:00",
+      "allDay": false,
+      "location": "Cafeteria",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "nina.ross@contoso.com",
+        "priya.patel@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-006",
+      "title": "Engineering All-Hands",
+      "date": "2026-02-25",
+      "startTime": "15:00",
+      "endTime": "16:30",
+      "allDay": false,
+      "location": "Main Auditorium",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-007",
+      "title": "Team Standup",
+      "date": "2026-02-25",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-008",
+      "title": "Sprint Planning",
+      "date": "2026-02-26",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "allDay": false,
+      "location": "Conf Room A",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "jordan.lee@contoso.com",
+        "priya.patel@contoso.com"
+      ],
+      "rsvp": "tentative"
+    },
+    {
+      "id": "event-009",
+      "title": "Team Standup",
+      "date": "2026-02-26",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-010",
+      "title": "Weekly Wrap-up",
+      "date": "2026-02-27",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-011",
+      "title": "Team Standup",
+      "date": "2026-02-27",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-012",
+      "title": "Team Standup",
+      "date": "2026-03-02",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-013",
+      "title": "Q1 OKR Check-in",
+      "date": "2026-03-02",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "allDay": false,
+      "location": "Conf Room C",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-014",
+      "title": "Team Standup",
+      "date": "2026-03-03",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-015",
+      "title": "Design Review: Dashboard",
+      "date": "2026-03-03",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "allDay": false,
+      "location": "Conf Room A",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "nina.ross@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "priya.patel@contoso.com",
+        "nina.ross@contoso.com",
+        "marcus.chen@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-016",
+      "title": "Vendor Call – Azure",
+      "date": "2026-03-03",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "alex.johnson@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-017",
+      "title": "Team Standup",
+      "date": "2026-03-04",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-018",
+      "title": "Budget Sync with Sarah",
+      "date": "2026-03-04",
+      "startTime": "10:00",
+      "endTime": "10:30",
+      "allDay": false,
+      "location": "",
+      "notes": "Review Q4 actuals",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-019",
+      "title": "Product Demo Prep",
+      "date": "2026-03-04",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "allDay": false,
+      "location": "Conf Room B",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "tentative"
+    },
+    {
+      "id": "event-020",
+      "title": "Team Standup",
+      "date": "2026-03-05",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-021",
+      "title": "Board Meeting",
+      "date": "2026-03-05",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "allDay": false,
+      "location": "Board Room",
+      "notes": "Q4 budget sign-off",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "tom.nguyen@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-022",
+      "title": "Lunch – Alex & Jordan",
+      "date": "2026-03-05",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "allDay": false,
+      "location": "The Nook",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "alex.johnson@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-023",
+      "title": "Sprint Demo",
+      "date": "2026-03-05",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "allDay": false,
+      "location": "Main Auditorium",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-024",
+      "title": "Team Standup",
+      "date": "2026-03-06",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-025",
+      "title": "1:1 with Manager",
+      "date": "2026-03-06",
+      "startTime": "11:00",
+      "endTime": "11:30",
+      "allDay": false,
+      "location": "",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-026",
+      "title": "Interview – Backend Engineer",
+      "date": "2026-03-06",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "allDay": false,
+      "location": "Conf Room A",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "alex.johnson@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-027",
+      "title": "Team Standup",
+      "date": "2026-03-07",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-028",
+      "title": "Retrospective",
+      "date": "2026-03-07",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "allDay": false,
+      "location": "Conf Room B",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-029",
+      "title": "Happy Hour",
+      "date": "2026-03-07",
+      "startTime": "17:00",
+      "endTime": "18:30",
+      "allDay": false,
+      "location": "Rooftop",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "nina.ross@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "tentative"
+    },
+    {
+      "id": "event-030",
+      "title": "Team Standup",
+      "date": "2026-03-09",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-031",
+      "title": "Kick-off: Q2 Planning",
+      "date": "2026-03-09",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "allDay": false,
+      "location": "Conf Room C",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-032",
+      "title": "Team Standup",
+      "date": "2026-03-10",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-033",
+      "title": "Security Training",
+      "date": "2026-03-10",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "allDay": false,
+      "location": "Online",
+      "notes": "Mandatory",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-034",
+      "title": "Team Standup",
+      "date": "2026-03-11",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-035",
+      "title": "Architecture Review",
+      "date": "2026-03-11",
+      "startTime": "11:00",
+      "endTime": "12:30",
+      "allDay": false,
+      "location": "Conf Room A",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "tom.nguyen@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-036",
+      "title": "Lunch & Learn: AI Tools",
+      "date": "2026-03-11",
+      "startTime": "12:30",
+      "endTime": "13:30",
+      "allDay": false,
+      "location": "Cafeteria",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "priya.patel@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-037",
+      "title": "Team Standup",
+      "date": "2026-03-12",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-038",
+      "title": "Customer Success Review",
+      "date": "2026-03-12",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "jordan.lee@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-039",
+      "title": "Team Standup",
+      "date": "2026-03-13",
+      "startTime": "09:00",
+      "endTime": "09:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-040",
+      "title": "Sprint Planning",
+      "date": "2026-03-13",
+      "startTime": "10:00",
+      "endTime": "12:00",
+      "allDay": false,
+      "location": "Conf Room B",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "jordan.lee@contoso.com",
+        "priya.patel@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-041",
+      "title": "Offsite Dinner",
+      "date": "2026-03-13",
+      "startTime": "18:00",
+      "endTime": "20:00",
+      "allDay": false,
+      "location": "The Capital Grille",
+      "notes": "",
+      "color": "blue",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com",
+        "nina.ross@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-042",
+      "title": "Company Holiday – Founders Day",
+      "date": "2026-02-28",
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "allDay": true,
+      "location": "",
+      "notes": "Office closed. No meetings.",
+      "color": "green",
+      "recurrence": "none",
+      "host": "hr@contoso.com",
+      "attendees": [],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-043",
+      "title": "PTO – Alex out",
+      "date": "2026-03-14",
+      "startTime": "00:00",
+      "endTime": "23:59",
+      "allDay": true,
+      "location": "",
+      "notes": "Personal day. Marcus covering.",
+      "color": "gray",
+      "recurrence": "none",
+      "host": "alex.johnson@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-044",
+      "title": "Data Review: Q4 Revenue Numbers",
+      "date": "2026-03-04",
+      "startTime": "11:00",
+      "endTime": "12:00",
+      "allDay": false,
+      "location": "Conf Room C",
+      "notes": "Bring laptop. Sarah will screen-share the Looker dashboard. Review revenue by product line, churn analysis, and feature attribution. Pre-read: Q4_2025_Revenue_Dashboard.xlsx from Sarah's email.",
+      "color": "purple",
+      "recurrence": "none",
+      "host": "sarah.kim@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "nina.ross@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-045",
+      "title": "Incident Retro: web-prod-03 Outage",
+      "date": "2026-03-05",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "allDay": false,
+      "location": "Conf Room A",
+      "notes": "Blameless post-mortem. Agenda: timeline review, 5-whys analysis, action items. Pre-read: incident report email from Alex (March 4).",
+      "color": "red",
+      "recurrence": "none",
+      "host": "alex.johnson@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-046",
+      "title": "Metrics Deep Dive: Platform Performance",
+      "date": "2026-03-06",
+      "startTime": "10:00",
+      "endTime": "11:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "Review weekly platform metrics (W09 report). Focus areas: 5xx error spike on /charges endpoint, infrastructure cost increase, flaky test triage. DataOps to present Grafana dashboards.",
+      "color": "orange",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "tom.nguyen@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "tentative"
+    },
+    {
+      "id": "event-047",
+      "title": "Hiring Debrief: Backend Engineer Candidates",
+      "date": "2026-03-07",
+      "startTime": "10:00",
+      "endTime": "10:45",
+      "allDay": false,
+      "location": "Conf Room B",
+      "notes": "Review feedback for 3 onsite candidates. Bring scorecards. Decision: extend offer or reopen search.",
+      "color": "purple",
+      "recurrence": "none",
+      "host": "rachel.green@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "sarah.kim@contoso.com",
+        "marcus.chen@contoso.com",
+        "rachel.green@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-048",
+      "title": "Acme Corp Escalation Call",
+      "date": "2026-03-04",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "Urgent. Acme Corp ($124K ARR) threatening to churn over rate-limit issues. Jordan to brief, Alex to present remediation plan. Bring data on /charges endpoint fix ETA.",
+      "color": "red",
+      "recurrence": "none",
+      "host": "jordan.lee@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "jordan.lee@contoso.com",
+        "tom.nguyen@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-049",
+      "title": "Tech Debt Prioritization",
+      "date": "2026-03-10",
+      "startTime": "14:00",
+      "endTime": "15:30",
+      "allDay": false,
+      "location": "Conf Room A",
+      "notes": "Rank tech debt items for the dedicated sprint (week of Mar 23). Inputs: dependency audit, DB performance report, flaky test list, WCAG audit. Each lead brings top-3 priorities.",
+      "color": "orange",
+      "recurrence": "none",
+      "host": "marcus.chen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "marcus.chen@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "none"
+    },
+    {
+      "id": "event-050",
+      "title": "A/B Test Review: Checkout Experiment CKO-42",
+      "date": "2026-03-05",
+      "startTime": "11:00",
+      "endTime": "11:45",
+      "allDay": false,
+      "location": "Teams",
+      "notes": "Analytics team presents final results. Decision: ship Variant B or iterate. Key data: +20.8% conversion lift, p<0.001. Bring revenue impact estimates.",
+      "color": "green",
+      "recurrence": "none",
+      "host": "nina.ross@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "nina.ross@contoso.com",
+        "priya.patel@contoso.com",
+        "jordan.lee@contoso.com"
+      ],
+      "rsvp": "accepted"
+    },
+    {
+      "id": "event-051",
+      "title": "SLA Breach Review with VP Eng",
+      "date": "2026-03-06",
+      "startTime": "15:00",
+      "endTime": "15:45",
+      "allDay": false,
+      "location": "Board Room",
+      "notes": "Required by SLA policy. Error budget exhausted for API Gateway and Web Application. Present root cause, remediation, and prevention plan. Tom will join.",
+      "color": "red",
+      "recurrence": "none",
+      "host": "tom.nguyen@contoso.com",
+      "attendees": [
+        "alex.johnson@contoso.com",
+        "tom.nguyen@contoso.com",
+        "sarah.kim@contoso.com"
+      ],
+      "rsvp": "accepted"
+    }
+  ]
+}

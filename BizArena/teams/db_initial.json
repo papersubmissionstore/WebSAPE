@@ -1,0 +1,1877 @@
+{
+  "currentUserId": "user-me",
+  "users": [
+    {
+      "id": "user-me",
+      "name": "Alex Rivera",
+      "initials": "AR",
+      "color": "#6264A7",
+      "status": "available"
+    },
+    {
+      "id": "user-2",
+      "name": "Jordan Kim",
+      "initials": "JK",
+      "color": "#C87B3D",
+      "status": "available"
+    },
+    {
+      "id": "user-3",
+      "name": "Morgan Chen",
+      "initials": "MC",
+      "color": "#2E7D32",
+      "status": "busy"
+    },
+    {
+      "id": "user-4",
+      "name": "Taylor Brooks",
+      "initials": "TB",
+      "color": "#1565C0",
+      "status": "away"
+    },
+    {
+      "id": "user-5",
+      "name": "Casey Nguyen",
+      "initials": "CN",
+      "color": "#6A1B9A",
+      "status": "available"
+    },
+    {
+      "id": "user-6",
+      "name": "Riley Patel",
+      "initials": "RP",
+      "color": "#AD1457",
+      "status": "dnd"
+    },
+    {
+      "id": "user-7",
+      "name": "Avery Thompson",
+      "initials": "AT",
+      "color": "#00695C",
+      "status": "available"
+    },
+    {
+      "id": "user-8",
+      "name": "Quinn Martinez",
+      "initials": "QM",
+      "color": "#E65100",
+      "status": "busy"
+    },
+    {
+      "id": "user-9",
+      "name": "Sam Lee",
+      "initials": "SL",
+      "color": "#37474F",
+      "status": "away"
+    },
+    {
+      "id": "user-10",
+      "name": "Drew Wilson",
+      "initials": "DW",
+      "color": "#880E4F",
+      "status": "available"
+    }
+  ],
+  "conversations": [
+    {
+      "id": "conv-1",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-2"
+      ],
+      "isFavorite": true,
+      "unreadCount": 17,
+      "createdAt": "2024-01-15T09:00:00Z"
+    },
+    {
+      "id": "conv-2",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-3"
+      ],
+      "isFavorite": false,
+      "unreadCount": 0,
+      "createdAt": "2024-01-16T10:00:00Z"
+    },
+    {
+      "id": "conv-3",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-4"
+      ],
+      "isFavorite": true,
+      "unreadCount": 19,
+      "createdAt": "2024-01-17T08:30:00Z"
+    },
+    {
+      "id": "conv-4",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-5"
+      ],
+      "isFavorite": false,
+      "unreadCount": 0,
+      "createdAt": "2024-01-18T11:00:00Z"
+    },
+    {
+      "id": "conv-5",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-6"
+      ],
+      "isFavorite": false,
+      "unreadCount": 18,
+      "createdAt": "2024-01-19T09:00:00Z"
+    },
+    {
+      "id": "conv-6",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-7"
+      ],
+      "isFavorite": false,
+      "unreadCount": 0,
+      "createdAt": "2024-01-20T13:00:00Z"
+    },
+    {
+      "id": "conv-7",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-8"
+      ],
+      "isFavorite": false,
+      "unreadCount": 0,
+      "createdAt": "2024-01-21T10:00:00Z"
+    },
+    {
+      "id": "conv-8",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-9"
+      ],
+      "isFavorite": false,
+      "unreadCount": 18,
+      "createdAt": "2024-01-22T09:00:00Z"
+    },
+    {
+      "id": "conv-9",
+      "type": "direct",
+      "participantIds": [
+        "user-me",
+        "user-10"
+      ],
+      "isFavorite": false,
+      "unreadCount": 0,
+      "createdAt": "2024-01-23T14:00:00Z"
+    },
+    {
+      "id": "conv-g1",
+      "type": "group",
+      "name": "Engineering Leads",
+      "participantIds": [
+        "user-me",
+        "user-2",
+        "user-3",
+        "user-7",
+        "user-8"
+      ],
+      "isFavorite": true,
+      "unreadCount": 9,
+      "createdAt": "2024-01-05T09:00:00Z"
+    },
+    {
+      "id": "conv-g2",
+      "type": "group",
+      "name": "Product Sprint Planning",
+      "participantIds": [
+        "user-me",
+        "user-4",
+        "user-5",
+        "user-6"
+      ],
+      "isFavorite": false,
+      "unreadCount": 0,
+      "createdAt": "2024-01-08T10:00:00Z"
+    },
+    {
+      "id": "conv-g3",
+      "type": "group",
+      "name": "Incident Response Team",
+      "participantIds": [
+        "user-me",
+        "user-7",
+        "user-8",
+        "user-9"
+      ],
+      "isFavorite": false,
+      "unreadCount": 13,
+      "createdAt": "2024-01-06T08:00:00Z"
+    },
+    {
+      "id": "conv-g4",
+      "type": "channel",
+      "name": "announcements",
+      "participantIds": [
+        "user-me",
+        "user-2",
+        "user-3",
+        "user-4",
+        "user-5",
+        "user-6",
+        "user-7",
+        "user-8",
+        "user-9",
+        "user-10"
+      ],
+      "isFavorite": true,
+      "unreadCount": 0,
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "conv-g5",
+      "type": "channel",
+      "name": "random",
+      "participantIds": [
+        "user-me",
+        "user-2",
+        "user-3",
+        "user-4",
+        "user-5",
+        "user-6",
+        "user-7",
+        "user-8",
+        "user-9",
+        "user-10"
+      ],
+      "isFavorite": false,
+      "unreadCount": 4,
+      "createdAt": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-10-1",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Alex, can you share the sprint velocity numbers from last quarter?",
+      "timestamp": "2024-01-10T10:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-10-2",
+      "conversationId": "conv-1",
+      "senderId": "user-me",
+      "body": "Sure, let me pull them from Jira. Give me a moment.",
+      "timestamp": "2024-01-10T10:03:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-10-3",
+      "conversationId": "conv-1",
+      "senderId": "user-me",
+      "body": "Q3 average was 42 story points per sprint. We had one outlier sprint at 28 due to the incident in October.",
+      "timestamp": "2024-01-10T10:08:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-10-4",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "That's useful context. I'll adjust the Q4 forecast accordingly.",
+      "timestamp": "2024-01-10T10:11:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-10-5",
+      "conversationId": "conv-1",
+      "senderId": "user-me",
+      "body": "Sounds good. Let me know if you need the breakdown by team or epic.",
+      "timestamp": "2024-01-10T10:13:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-1",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Hey Alex! Got a sec to review the Q4 roadmap doc I sent over?",
+      "timestamp": "2024-01-20T09:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-2",
+      "conversationId": "conv-1",
+      "senderId": "user-me",
+      "body": "Sure, give me 10 minutes. Just finishing up a standup.",
+      "timestamp": "2024-01-20T09:17:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-3",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "No rush! The main thing I want your eyes on is the resource allocation section.",
+      "timestamp": "2024-01-20T09:18:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-4",
+      "conversationId": "conv-1",
+      "senderId": "user-me",
+      "body": "OK looked at it. I think we're understaffing the infra work. We should add at least 1 more engineer.",
+      "timestamp": "2024-01-20T09:35:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-5",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Agreed. I'll flag it to Jamie in the planning meeting today.",
+      "timestamp": "2024-01-20T09:37:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-6",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Also \u2014 are you going to the all-hands on Thursday?",
+      "timestamp": "2024-01-20T09:38:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-1-7",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Alex, I wanted to loop you in on something. We're kicking off the CI/CD pipeline migration project next sprint.",
+      "timestamp": "2024-01-29T10:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-8",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "The goal is to move everything from Jenkins to GitHub Actions. It's been on the backlog for over a year.",
+      "timestamp": "2024-01-29T10:01:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-9",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "We have 47 pipeline jobs currently. Some are trivial, but a few have custom Groovy scripts that are going to be a pain to port.",
+      "timestamp": "2024-01-29T10:02:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-10",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "I started an audit spreadsheet. The high-risk jobs are the ones touching the deploy-to-prod pipeline and the nightly test regression suite.",
+      "timestamp": "2024-01-29T10:04:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-11",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Do you think we should do a parallel-run period where both Jenkins and GHA run simultaneously for 2 weeks before cutover?",
+      "timestamp": "2024-01-29T10:22:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-12",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "The concern is that GHA has a 6-hour job timeout limit \u2014 some of our nightly runs take 7+ hours on Jenkins.",
+      "timestamp": "2024-01-29T10:23:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-13",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "One option is to break those long jobs into matrix strategies with parallelism. But that means re-architecting the test suite.",
+      "timestamp": "2024-01-29T10:25:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-14",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "I also need to cost out GitHub Actions usage. We're currently on the free tier for our private repos \u2014 this migration will bump us to Team plan at minimum.",
+      "timestamp": "2024-01-29T10:27:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-15",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Alex, can you sign off on the project charter? I need it to pull in Morgan and Quinn for the implementation.",
+      "timestamp": "2024-01-29T10:29:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-16",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "The charter is in Confluence under Eng/Projects/CI-CD-Migration. I've already gotten buy-in from the SRE team.",
+      "timestamp": "2024-01-29T10:30:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-17",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Also want to flag that the Jenkins server contract renewal is in March. If we don't migrate by then we're auto-renewed for another year.",
+      "timestamp": "2024-01-29T10:48:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-18",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "That's a $48k/year license we'd love to not pay for if we can hit the migration target.",
+      "timestamp": "2024-01-29T10:49:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-19",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "One more thing \u2014 I'm thinking of setting up a migration guild with a weekly sync. Would you be willing to sponsor the initiative from the leadership side?",
+      "timestamp": "2024-01-29T10:51:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-20",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "I know it's a lot to drop on you at once. Let me know when you have 20 min to walk through everything together.",
+      "timestamp": "2024-01-29T10:52:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-21",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Oh and I should mention \u2014 Avery has already started benchmarking GHA runner performance vs Jenkins agents on the same workloads. Results are looking promising.",
+      "timestamp": "2024-01-29T10:54:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-22",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "Avery's benchmarks show ~30% faster job execution on GHA for the standard build jobs. Security scanning is the same speed.",
+      "timestamp": "2024-01-29T10:55:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-1-23",
+      "conversationId": "conv-1",
+      "senderId": "user-2",
+      "body": "That should help the ROI argument when we present to the VP of Eng. Let me know your thoughts, Alex!",
+      "timestamp": "2024-01-29T10:56:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-2-1",
+      "conversationId": "conv-2",
+      "senderId": "user-me",
+      "body": "Morgan, did you finish the API migration notes?",
+      "timestamp": "2024-01-19T14:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-2-2",
+      "conversationId": "conv-2",
+      "senderId": "user-3",
+      "body": "Almost done. There are a few edge cases around the auth token refresh I'm still documenting.",
+      "timestamp": "2024-01-19T14:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-2-3",
+      "conversationId": "conv-2",
+      "senderId": "user-me",
+      "body": "Take your time. We don't need it until EOD Friday.",
+      "timestamp": "2024-01-19T14:07:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-2-4",
+      "conversationId": "conv-2",
+      "senderId": "user-3",
+      "body": "Perfect, I'll have it to you by Thursday latest. Should I drop it in the shared Drive or send directly?",
+      "timestamp": "2024-01-19T14:10:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-2-5",
+      "conversationId": "conv-2",
+      "senderId": "user-me",
+      "body": "Drop it in Drive please, under the Engineering/Docs/Migrations folder.",
+      "timestamp": "2024-01-19T14:12:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-3-1",
+      "conversationId": "conv-3",
+      "senderId": "user-me",
+      "body": "Taylor, quick question on the budget projections. Did finance approve the extra headcount?",
+      "timestamp": "2024-01-21T10:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-3-2",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Not yet. They want to see the ROI model first. I'm working on it with Priya.",
+      "timestamp": "2024-01-21T10:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-3-3",
+      "conversationId": "conv-3",
+      "senderId": "user-me",
+      "body": "When do you think you'll have a draft ready?",
+      "timestamp": "2024-01-21T10:06:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-3-4",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Hopefully by end of next week. It's a bit complex because we have to account for contractor vs FTE costs.",
+      "timestamp": "2024-01-21T10:10:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-5",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Actually Alex I've been doing more thinking on the headcount ROI model and I need to walk you through the full picture.",
+      "timestamp": "2024-01-28T14:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-6",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "We're requesting 3 new FTE engineers for the platform team. Total fully-loaded cost is roughly $900k/year.",
+      "timestamp": "2024-01-28T14:01:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-7",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Finance wants a 3-year NPV justification. I modeled it out and the break-even is at around 18 months based on productivity gains.",
+      "timestamp": "2024-01-28T14:03:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-8",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "The productivity gain assumptions are based on reducing on-call burden, faster deploys, and unblocking 2 feature teams who are currently bottlenecked on platform work.",
+      "timestamp": "2024-01-28T14:05:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-9",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "I assumed 15% feature team velocity improvement post-platform investment. That's conservative \u2014 Shopify reported 22% in a similar case study.",
+      "timestamp": "2024-01-28T14:07:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-10",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "One complication: Finance is insisting on a contractor comparison. I need your input on whether we should do FTE or use contractors for the first 6 months.",
+      "timestamp": "2024-01-28T14:25:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-11",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "My recommendation is FTE from day 1. Contractors would save ~$120k year 1 but cost more long-term due to ramp time and knowledge transfer overhead.",
+      "timestamp": "2024-01-28T14:26:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-12",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Also the platform work is highly contextual \u2014 contractors would struggle without deep internal knowledge of our infra stack.",
+      "timestamp": "2024-01-28T14:28:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-13",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Alex, can you send me your team's current on-call load stats? I need the average pages/week per engineer for the model.",
+      "timestamp": "2024-01-28T14:29:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-14",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Also need the deployment frequency data for the last 6 months \u2014 how many deploys/week and what % require manual intervention.",
+      "timestamp": "2024-01-28T14:31:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-15",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "I'll plug those into the model. Once the draft is done I'll need your sign-off before it goes to the VP of Engineering.",
+      "timestamp": "2024-01-28T14:32:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-16",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "The VP meeting is scheduled for next Tuesday at 3pm. We have 30 minutes to make the case.",
+      "timestamp": "2024-01-28T14:50:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-17",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "I'm also planning to include a hiring timeline: JD posted by Week 2, interviews in Week 4-6, offers in Week 7, start dates in Week 10.",
+      "timestamp": "2024-01-28T14:51:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-18",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "That timeline is aggressive. Do you think recruiting can move that fast? Last time we hired platform engineers it took 14 weeks.",
+      "timestamp": "2024-01-28T14:53:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-19",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "We might want to float the idea of internal transfers as a faster option for at least 1 of the 3 positions.",
+      "timestamp": "2024-01-28T14:54:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-20",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Casey mentioned they'd be interested in moving to platform. You'd know better than me if that's a good fit.",
+      "timestamp": "2024-01-28T14:55:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-21",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "Alex \u2014 bottom line: I need your data inputs by EOD tomorrow and your sign-off on the charter by Friday. Can you confirm you can hit those?",
+      "timestamp": "2024-01-28T14:57:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-3-22",
+      "conversationId": "conv-3",
+      "senderId": "user-4",
+      "body": "This is the biggest investment ask the engineering org has made in 2 years. Really appreciate your support on it.",
+      "timestamp": "2024-01-28T14:58:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-4-1",
+      "conversationId": "conv-4",
+      "senderId": "user-5",
+      "body": "Alex, are you joining the UX review session today at 3pm?",
+      "timestamp": "2024-01-22T09:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-4-2",
+      "conversationId": "conv-4",
+      "senderId": "user-me",
+      "body": "Yes! I just accepted the calendar invite. Looking forward to seeing the new designs.",
+      "timestamp": "2024-01-22T09:02:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-4-3",
+      "conversationId": "conv-4",
+      "senderId": "user-5",
+      "body": "Great! We're focusing on the onboarding flow today. Lot of changes based on the last user research round.",
+      "timestamp": "2024-01-22T09:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-4-4",
+      "conversationId": "conv-4",
+      "senderId": "user-me",
+      "body": "I heard the drop-off rate at step 3 was really high. Curious what the new approach is.",
+      "timestamp": "2024-01-22T09:08:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-4-5",
+      "conversationId": "conv-4",
+      "senderId": "user-5",
+      "body": "Yeah it was brutal \u2014 68% drop-off. The new design consolidates steps 3 and 4 and adds inline help text.",
+      "timestamp": "2024-01-22T09:11:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-5-1",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Hey Alex \u2014 I finished the compliance audit report. Want me to walk you through the findings?",
+      "timestamp": "2024-01-23T15:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-5-2",
+      "conversationId": "conv-5",
+      "senderId": "user-me",
+      "body": "That would be great. Can we do it tomorrow morning?",
+      "timestamp": "2024-01-23T15:04:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-5-3",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Sure. How does 9am work?",
+      "timestamp": "2024-01-23T15:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-5-4",
+      "conversationId": "conv-5",
+      "senderId": "user-me",
+      "body": "9am is good. I'll send a calendar invite.",
+      "timestamp": "2024-01-23T15:06:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-5-5",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "There's one critical finding you should know about before then \u2014 we have a gap in our data retention policy for GDPR.",
+      "timestamp": "2024-01-23T15:30:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-5-6",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Alex, I know it's late but I need to brief you on the full compliance audit before tomorrow's meeting.",
+      "timestamp": "2024-01-29T08:30:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-7",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "We found 5 significant gaps. I'm going to walk through each one here so you have context going into the meeting.",
+      "timestamp": "2024-01-29T08:31:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-8",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Gap 1: Data retention. We're keeping user PII for an indefinite period in the analytics database. GDPR requires a maximum 13-month retention for marketing analytics data.",
+      "timestamp": "2024-01-29T08:33:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-9",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Gap 2: Right to erasure. Our current data deletion flow only removes users from the primary DB. It doesn't cascade to the data warehouse, audit logs, or backups.",
+      "timestamp": "2024-01-29T08:35:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-10",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Gap 3: Consent logging. We don't have a versioned audit trail for when users accepted/updated their consent. This is critical for demonstrating compliance in an audit.",
+      "timestamp": "2024-01-29T08:36:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-11",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Gap 4: Data portability. We have no mechanism for users to export their data in a machine-readable format. Article 20 of GDPR requires this.",
+      "timestamp": "2024-01-29T08:52:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-12",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Gap 5: Third-party processor agreements. We have 3 vendors processing EU user data without current DPAs in place \u2014 one of them handles payment tokenization.",
+      "timestamp": "2024-01-29T08:53:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-13",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Gaps 1, 2, and 5 are the most urgent. A regulator visit today would be a problem for all three.",
+      "timestamp": "2024-01-29T08:54:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-14",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Alex, this is going to need engineering resourcing to fix. Estimated effort: Gap 1 = 3 sprints, Gap 2 = 2 sprints, Gap 3 = 1 sprint, Gap 4 = 2 sprints, Gap 5 = mostly legal + 0.5 sprint.",
+      "timestamp": "2024-01-29T08:55:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-15",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "I've already drafted a remediation roadmap with prioritization. I'll share it in the meeting but wanted you to have the headline numbers first.",
+      "timestamp": "2024-01-29T08:57:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-16",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "The legal team has been looped in. They're concerned about the DPA situation and want to know if we can fast-track those vendor agreements.",
+      "timestamp": "2024-01-29T09:12:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-17",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "One of the vendors (Helios Payments) has been unresponsive to our legal team for 3 weeks. We may need to escalate or consider switching providers.",
+      "timestamp": "2024-01-29T09:13:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-18",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "Switching payment processors mid-year would be a major engineering effort \u2014 probably 4-5 sprints. I don't think we should rule it out though given the compliance risk.",
+      "timestamp": "2024-01-29T09:14:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-19",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "I'll need you to help call for a decision from leadership on the Helios situation. This is above my level to decide unilaterally.",
+      "timestamp": "2024-01-29T09:15:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-20",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "In summary: we're exposed on multiple GDPR fronts. I'd classify our overall posture as 'medium-high risk' right now.",
+      "timestamp": "2024-01-29T09:17:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-21",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "The good news is all gaps are fixable with focused effort over the next 2 quarters. Nothing that requires a full platform overhaul.",
+      "timestamp": "2024-01-29T09:18:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-22",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "See you at 9am Alex. Bring coffee \u2014 it's going to be a dense session.",
+      "timestamp": "2024-01-29T09:19:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-5-23",
+      "conversationId": "conv-5",
+      "senderId": "user-6",
+      "body": "PS \u2014 I've also flagged a potential CCPA concern for our California users. I'll cover that at the end if we have time.",
+      "timestamp": "2024-01-29T09:20:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-6-1",
+      "conversationId": "conv-6",
+      "senderId": "user-me",
+      "body": "Avery, thanks for leading the incident postmortem yesterday. Really smooth facilitation.",
+      "timestamp": "2024-01-24T11:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-6-2",
+      "conversationId": "conv-6",
+      "senderId": "user-7",
+      "body": "Thanks! It was a tough one \u2014 4 hours of downtime is never fun to dig through. But the team was great.",
+      "timestamp": "2024-01-24T11:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-6-3",
+      "conversationId": "conv-6",
+      "senderId": "user-me",
+      "body": "Agreed. Are the action items tracked somewhere?",
+      "timestamp": "2024-01-24T11:07:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-6-4",
+      "conversationId": "conv-6",
+      "senderId": "user-7",
+      "body": "Yes \u2014 I added them all to the Jira board under the P0-postmortem epic. 7 action items total, 3 are high priority.",
+      "timestamp": "2024-01-24T11:10:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-6-5",
+      "conversationId": "conv-6",
+      "senderId": "user-me",
+      "body": "Perfect. Let's do a weekly check-in on those until they're all resolved.",
+      "timestamp": "2024-01-24T11:12:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-7-1",
+      "conversationId": "conv-7",
+      "senderId": "user-8",
+      "body": "Alex, I pushed the hotfix to staging. Can you do a quick smoke test?",
+      "timestamp": "2024-01-25T14:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-7-2",
+      "conversationId": "conv-7",
+      "senderId": "user-me",
+      "body": "On it. Give me 5 minutes.",
+      "timestamp": "2024-01-25T14:02:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-7-3",
+      "conversationId": "conv-7",
+      "senderId": "user-me",
+      "body": "Tested. Login flow and checkout both look good. The payment error is fixed.",
+      "timestamp": "2024-01-25T14:12:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-7-4",
+      "conversationId": "conv-7",
+      "senderId": "user-8",
+      "body": "Great, I'll promote to prod now. Thanks for the quick turnaround!",
+      "timestamp": "2024-01-25T14:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-7-5",
+      "conversationId": "conv-7",
+      "senderId": "user-me",
+      "body": "No problem. Let me know once it's live and I'll monitor the error rates.",
+      "timestamp": "2024-01-25T14:16:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-8-1",
+      "conversationId": "conv-8",
+      "senderId": "user-me",
+      "body": "Sam, are you taking point on the vendor evaluation this quarter?",
+      "timestamp": "2024-01-26T10:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-8-2",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Yes, I'm coordinating with procurement. We have three vendors shortlisted so far.",
+      "timestamp": "2024-01-26T10:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-8-3",
+      "conversationId": "conv-8",
+      "senderId": "user-me",
+      "body": "Which three are you looking at?",
+      "timestamp": "2024-01-26T10:07:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-8-4",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Datadog, New Relic, and Grafana Cloud. Each has different pricing and feature tradeoffs.",
+      "timestamp": "2024-01-26T10:30:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-8-5",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "I've been running a deeper analysis over the past few days. Here's where I've landed \u2014 full breakdown below.",
+      "timestamp": "2024-01-29T09:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-6",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Datadog: Best-in-class APM and distributed tracing. Excellent Kubernetes integration. Pricing is the highest \u2014 estimated $180k/year at our scale.",
+      "timestamp": "2024-01-29T09:01:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-7",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Datadog pros: unified platform (metrics, logs, traces, dashboards), great alerting, strong community. Cons: expensive, vendor lock-in is real.",
+      "timestamp": "2024-01-29T09:02:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-8",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "New Relic: Good all-around platform, pricing is per-user which works in our favor since we have a small ops team. Estimated $95k/year.",
+      "timestamp": "2024-01-29T09:04:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-9",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "New Relic cons: their UI has improved but is still not as polished as Datadog. Their Kubernetes dashboards are behind.",
+      "timestamp": "2024-01-29T09:05:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-10",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Grafana Cloud: Open source stack (Prometheus + Loki + Tempo). Cheapest option \u2014 estimated $40k/year. But requires more operational overhead.",
+      "timestamp": "2024-01-29T09:07:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-11",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Grafana Cloud pros: no vendor lock-in, data stays in our infra, highly customizable. Cons: team needs to manage alerts, dashboards, and retention config ourselves.",
+      "timestamp": "2024-01-29T09:08:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-12",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "My recommendation: Grafana Cloud if we can allocate 0.5 FTE to platform observability work. Otherwise Datadog is worth the cost for the productivity gains.",
+      "timestamp": "2024-01-29T09:25:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-13",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Alex, I know you've been pushing for Grafana to keep costs down. I want to make sure we're realistic about the maintenance burden.",
+      "timestamp": "2024-01-29T09:26:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-14",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Quinn did a POC with Datadog last week. Said the auto-instrumentation for our Node.js services took 2 hours vs 2 days with Grafana.",
+      "timestamp": "2024-01-29T09:28:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-15",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "I've also run numbers for a hybrid approach: Grafana for infra metrics (cheap) + Datadog just for APM. Comes out to ~$90k/year.",
+      "timestamp": "2024-01-29T09:29:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-16",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "The hybrid approach is operationally more complex but gives us the best of both worlds on cost vs capability.",
+      "timestamp": "2024-01-29T09:31:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-17",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "I need a decision by end of this week. Procurement needs 3 weeks lead time to negotiate contract terms before Q1 end.",
+      "timestamp": "2024-01-29T09:50:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-18",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Can we set up a 30-min call today or tomorrow to align? I'll prepare a one-pager for you to share with the leadership team.",
+      "timestamp": "2024-01-29T09:51:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-19",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Also \u2014 separate topic \u2014 the current on-prem monitoring setup (Nagios + Grafana OSS) is becoming a liability. Server is running on hardware from 2019 and is out of support warranty.",
+      "timestamp": "2024-01-29T09:52:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-20",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "If that server goes down we're flying blind. It happened once last year and it was not fun. We need to decommission it regardless of which vendor we choose.",
+      "timestamp": "2024-01-29T09:53:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-21",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "Alex, I've put together all the data. Whatever direction you want to go, I'll support it. But we really can't punt on this decision any longer.",
+      "timestamp": "2024-01-29T09:54:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-8-22",
+      "conversationId": "conv-8",
+      "senderId": "user-9",
+      "body": "The comparison matrix is in the shared Drive under Eng/Infra/Observability-Eval-2024. Let me know when you've had a chance to review.",
+      "timestamp": "2024-01-29T09:55:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-9-1",
+      "conversationId": "conv-9",
+      "senderId": "user-10",
+      "body": "Hey Alex, wanted to introduce myself \u2014 I'm Drew, joining the growth team next Monday.",
+      "timestamp": "2024-01-27T09:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-9-2",
+      "conversationId": "conv-9",
+      "senderId": "user-me",
+      "body": "Welcome Drew! Great to connect. Looking forward to working with you.",
+      "timestamp": "2024-01-27T09:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-9-3",
+      "conversationId": "conv-9",
+      "senderId": "user-10",
+      "body": "Thanks! Could you walk me through the onboarding process? I wasn't sure who to reach out to first.",
+      "timestamp": "2024-01-27T09:07:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-9-4",
+      "conversationId": "conv-9",
+      "senderId": "user-me",
+      "body": "Sure! I'll schedule a 30-minute intro call for Monday afternoon. I'll also add you to the relevant channels.",
+      "timestamp": "2024-01-27T09:10:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-9-5",
+      "conversationId": "conv-9",
+      "senderId": "user-10",
+      "body": "That sounds perfect. Really appreciate the warm welcome!",
+      "timestamp": "2024-01-27T09:12:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g1-1",
+      "conversationId": "conv-g1",
+      "senderId": "user-7",
+      "body": "Team \u2014 I've drafted the OKRs for Q1. Can everyone review by EOD Wednesday?",
+      "timestamp": "2024-01-28T09:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g1-2",
+      "conversationId": "conv-g1",
+      "senderId": "user-3",
+      "body": "I'll review. One heads up \u2014 I think we need to revisit the reliability KR, it's too vague.",
+      "timestamp": "2024-01-28T09:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g1-3",
+      "conversationId": "conv-g1",
+      "senderId": "user-8",
+      "body": "Agree with Morgan. We should tie it to a specific SLA target like 99.9% uptime.",
+      "timestamp": "2024-01-28T09:20:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g1-4",
+      "conversationId": "conv-g1",
+      "senderId": "user-me",
+      "body": "Makes sense. Let's use 99.9% as the baseline. I'll propose that on the doc.",
+      "timestamp": "2024-01-28T09:25:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g1-5",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Team \u2014 new topic. I want to propose we adopt a service mesh this quarter. I've been evaluating Istio and Linkerd.",
+      "timestamp": "2024-01-29T11:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-6",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Context: we now have 34 microservices in production. Managing mTLS, retries, and circuit breakers at the app level is becoming painful.",
+      "timestamp": "2024-01-29T11:01:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-7",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "A service mesh would give us: automatic mTLS everywhere, observability (traces + metrics per service pair), and traffic shaping without code changes.",
+      "timestamp": "2024-01-29T11:02:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-8",
+      "conversationId": "conv-g1",
+      "senderId": "user-3",
+      "body": "I've looked at Istio before. The control plane overhead is non-trivial. Are we sure we need the full feature set?",
+      "timestamp": "2024-01-29T11:05:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-9",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Fair point Morgan. Linkerd is much lighter \u2014 it adds about 2ms per hop vs Istio's 8-10ms. For our latency-sensitive services that matters.",
+      "timestamp": "2024-01-29T11:07:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-10",
+      "conversationId": "conv-g1",
+      "senderId": "user-8",
+      "body": "What's the ops burden for running a service mesh? Who on the team would own it?",
+      "timestamp": "2024-01-29T11:09:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-11",
+      "conversationId": "conv-g1",
+      "senderId": "user-7",
+      "body": "The SRE team would own it \u2014 that's us. I've been researching this too and I think Linkerd is the right call. Simpler ops story.",
+      "timestamp": "2024-01-29T11:11:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-12",
+      "conversationId": "conv-g1",
+      "senderId": "user-3",
+      "body": "If we go Linkerd, what's the migration path? Do we instrument all 34 services at once or roll it out progressively?",
+      "timestamp": "2024-01-29T11:13:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-13",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Progressive rollout. Start with the payment and auth services (highest risk / highest value), then expand from there.",
+      "timestamp": "2024-01-29T11:15:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-14",
+      "conversationId": "conv-g1",
+      "senderId": "user-8",
+      "body": "I can scope the payment service integration. It's our most complex from a mTLS standpoint \u2014 if Linkerd handles it we're good for the rest.",
+      "timestamp": "2024-01-29T11:17:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-15",
+      "conversationId": "conv-g1",
+      "senderId": "user-7",
+      "body": "Let's set up a dedicated design doc. I'll create a skeleton in Confluence and share it in this channel by EOD.",
+      "timestamp": "2024-01-29T11:19:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-16",
+      "conversationId": "conv-g1",
+      "senderId": "user-me",
+      "body": "This sounds promising. Alex here \u2014 I'm supportive but want us to be honest about the risk. Service meshes can be a footgun if not owned well.",
+      "timestamp": "2024-01-29T11:21:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-17",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Agreed Alex. We'll include a rollback plan in the design doc and require approval from you and the SRE lead before each phase.",
+      "timestamp": "2024-01-29T11:23:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-18",
+      "conversationId": "conv-g1",
+      "senderId": "user-3",
+      "body": "I'd also recommend we do a load test comparing baseline vs mesh-injected traffic before any production rollout.",
+      "timestamp": "2024-01-29T11:24:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-19",
+      "conversationId": "conv-g1",
+      "senderId": "user-8",
+      "body": "+1 to Morgan's suggestion. I'll add that as a required gate in the design doc.",
+      "timestamp": "2024-01-29T11:25:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-20",
+      "conversationId": "conv-g1",
+      "senderId": "user-7",
+      "body": "Also worth noting \u2014 Linkerd just released v2.14 last week with improved multi-cluster support. That's relevant for our EU/US split.",
+      "timestamp": "2024-01-29T11:26:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-21",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Great catch Avery. I'll include v2.14 in the evaluation. The multi-cluster story is key for us if we ever want to do active-active.",
+      "timestamp": "2024-01-29T11:27:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-22",
+      "conversationId": "conv-g1",
+      "senderId": "user-3",
+      "body": "One more consideration: do we have the Kubernetes RBAC configured to support Linkerd's injection webhook? That tripped up another team I know.",
+      "timestamp": "2024-01-29T11:29:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-23",
+      "conversationId": "conv-g1",
+      "senderId": "user-8",
+      "body": "I'll check the cluster RBAC config this afternoon. Quinn on it.",
+      "timestamp": "2024-01-29T11:30:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-24",
+      "conversationId": "conv-g1",
+      "senderId": "user-7",
+      "body": "Design doc skeleton is up in Confluence: Engineering > Architecture > Service Mesh Proposal 2024. Review and comment by Friday.",
+      "timestamp": "2024-01-29T16:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g1-25",
+      "conversationId": "conv-g1",
+      "senderId": "user-2",
+      "body": "Alex, can you add your thoughts on the risk tolerance section? That part needs an EM perspective.",
+      "timestamp": "2024-01-29T16:02:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g2-1",
+      "conversationId": "conv-g2",
+      "senderId": "user-4",
+      "body": "Reminder: sprint planning is tomorrow at 10am. Please come with your top 3 priorities for the backlog.",
+      "timestamp": "2024-01-29T15:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g2-2",
+      "conversationId": "conv-g2",
+      "senderId": "user-5",
+      "body": "Quick question \u2014 are we including the accessibility backlog items this sprint?",
+      "timestamp": "2024-01-29T15:10:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g2-3",
+      "conversationId": "conv-g2",
+      "senderId": "user-4",
+      "body": "Yes, at least 2 accessibility items per our Q1 commitment. They're already tagged in Jira.",
+      "timestamp": "2024-01-29T15:12:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g2-4",
+      "conversationId": "conv-g2",
+      "senderId": "user-me",
+      "body": "I'll add my priorities to the sheet now. Are we using the same Google Sheet as last sprint?",
+      "timestamp": "2024-01-29T15:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g2-5",
+      "conversationId": "conv-g2",
+      "senderId": "user-6",
+      "body": "Yes, same sheet. I added a new tab for this sprint.",
+      "timestamp": "2024-01-29T15:20:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-1",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "ALERT: Detection system showing elevated error rate on the payment service. Spike started ~10 minutes ago.",
+      "timestamp": "2024-01-30T02:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-2",
+      "conversationId": "conv-g3",
+      "senderId": "user-8",
+      "body": "On it. Checking the logs now. Looks like it started after the last deployment.",
+      "timestamp": "2024-01-30T02:17:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-3",
+      "conversationId": "conv-g3",
+      "senderId": "user-7",
+      "body": "I'm rolling back the deployment as a precaution.",
+      "timestamp": "2024-01-30T02:19:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-4",
+      "conversationId": "conv-g3",
+      "senderId": "user-me",
+      "body": "Good call. I'll draft comms for the status page. Keep me posted on ETA to resolution.",
+      "timestamp": "2024-01-30T02:21:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-5",
+      "conversationId": "conv-g3",
+      "senderId": "user-8",
+      "body": "Rollback complete. Error rate dropping now.",
+      "timestamp": "2024-01-30T02:35:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-6",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Confirmed \u2014 error rate back to baseline. Monitoring for next 30 minutes.",
+      "timestamp": "2024-01-30T02:37:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-7",
+      "conversationId": "conv-g3",
+      "senderId": "user-7",
+      "body": "Good work everyone. Root cause appears to be a null pointer in the new payment validation logic.",
+      "timestamp": "2024-01-30T02:45:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-8",
+      "conversationId": "conv-g3",
+      "senderId": "user-8",
+      "body": "I'll create a Jira ticket for the fix and schedule a postmortem for tomorrow.",
+      "timestamp": "2024-01-30T02:47:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-9",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Alex \u2014 incident resolved. Total duration: 32 minutes. No data loss.",
+      "timestamp": "2024-01-30T02:50:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-10",
+      "conversationId": "conv-g3",
+      "senderId": "user-7",
+      "body": "Here are the incident tickets created for the postmortem follow-ups.",
+      "timestamp": "2024-01-30T02:55:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-11",
+      "conversationId": "conv-g3",
+      "senderId": "user-8",
+      "body": "Postmortem scheduled for tomorrow at 2pm. All team members please attend.",
+      "timestamp": "2024-01-30T03:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g3-12",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Postmortem done. 5 action items identified. Sharing the full report now.",
+      "timestamp": "2024-01-30T15:30:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-13",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Action item 1: Add null-check guard in PaymentValidationService.validate() \u2014 owner: Quinn, due: next sprint.",
+      "timestamp": "2024-01-30T15:31:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-14",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Action item 2: Add integration test coverage for null payment method scenario \u2014 owner: Morgan, due: next sprint.",
+      "timestamp": "2024-01-30T15:32:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-15",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Action item 3: Improve deployment canary strategy \u2014 currently we deploy 100% instantly. We need a 5%/25%/100% rollout with automated rollback triggers.",
+      "timestamp": "2024-01-30T15:33:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-16",
+      "conversationId": "conv-g3",
+      "senderId": "user-7",
+      "body": "I'll take action item 3. I've been wanting to implement Argo Rollouts for this. The canary strategy is long overdue.",
+      "timestamp": "2024-01-30T15:35:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-17",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Action item 4: Set up a synthetic monitoring probe for the payment service that fires before real users are affected.",
+      "timestamp": "2024-01-30T15:36:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-18",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Action item 5: Define and document a formal SEV-1 escalation runbook so we don't have to improvise during incidents.",
+      "timestamp": "2024-01-30T15:37:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-19",
+      "conversationId": "conv-g3",
+      "senderId": "user-8",
+      "body": "I'll draft the SEV-1 runbook this week. I have a template from my previous company I can adapt.",
+      "timestamp": "2024-01-30T15:39:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-20",
+      "conversationId": "conv-g3",
+      "senderId": "user-7",
+      "body": "Alex \u2014 we want your input on action item 3 scope. Argo Rollouts would be great but it's a new dependency. Do you think the team is ready to operate it?",
+      "timestamp": "2024-01-30T15:41:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-21",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Also worth flagging: this is the third payment service incident in 4 months. We should consider a dedicated reliability sprint focused on that service.",
+      "timestamp": "2024-01-30T15:42:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-22",
+      "conversationId": "conv-g3",
+      "senderId": "user-8",
+      "body": "Agreed with Sam. The payment service has accumulated significant tech debt. A reliability sprint would give us the runway to address it properly.",
+      "timestamp": "2024-01-30T15:44:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-23",
+      "conversationId": "conv-g3",
+      "senderId": "user-7",
+      "body": "Alex can you add a reliability sprint to the Q1 planning agenda? I think we have a strong case now after 3 incidents.",
+      "timestamp": "2024-01-30T15:45:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g3-24",
+      "conversationId": "conv-g3",
+      "senderId": "user-9",
+      "body": "Full postmortem doc is now in Confluence: Engineering > Incidents > INC-2024-003. Please review and add your timeline contributions.",
+      "timestamp": "2024-01-30T15:47:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g4-1",
+      "conversationId": "conv-g4",
+      "senderId": "user-4",
+      "body": "Welcome to Q1 2024 everyone! We're kicking off a new initiative to improve developer tooling this quarter.",
+      "timestamp": "2024-01-02T09:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g4-2",
+      "conversationId": "conv-g4",
+      "senderId": "user-7",
+      "body": "Exciting! This has been a long time coming. Looking forward to seeing what the team comes up with.",
+      "timestamp": "2024-01-02T09:15:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g4-3",
+      "conversationId": "conv-g4",
+      "senderId": "user-2",
+      "body": "Reminder: all-hands meeting is this Thursday at 2pm. Please add your agenda items to the shared doc.",
+      "timestamp": "2024-01-15T10:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g4-4",
+      "conversationId": "conv-g4",
+      "senderId": "user-4",
+      "body": "Also a reminder that the new performance review cycle opens next Monday. Managers will send calendar invites.",
+      "timestamp": "2024-01-20T14:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g4-5",
+      "conversationId": "conv-g4",
+      "senderId": "user-3",
+      "body": "Congrats to the product team for shipping the new dashboard! Great collaboration across the org.",
+      "timestamp": "2024-01-25T16:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g5-1",
+      "conversationId": "conv-g5",
+      "senderId": "user-10",
+      "body": "Anyone else see that the office coffee machine has been upgraded? Game changer.",
+      "timestamp": "2024-01-29T08:30:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g5-2",
+      "conversationId": "conv-g5",
+      "senderId": "user-5",
+      "body": "Yes!! The oat milk frother is elite. I'm already on my third cup.",
+      "timestamp": "2024-01-29T08:35:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g5-3",
+      "conversationId": "conv-g5",
+      "senderId": "user-2",
+      "body": "What's everyone's lunch plans today? Thinking of hitting the new ramen place nearby.",
+      "timestamp": "2024-01-30T12:00:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g5-4",
+      "conversationId": "conv-g5",
+      "senderId": "user-7",
+      "body": "I'm in! What time are you heading over?",
+      "timestamp": "2024-01-30T12:05:00Z",
+      "isRead": true
+    },
+    {
+      "id": "msg-g5-5",
+      "conversationId": "conv-g5",
+      "senderId": "user-2",
+      "body": "Was thinking 12:30. Anyone else want to join?",
+      "timestamp": "2024-01-30T12:07:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-6",
+      "conversationId": "conv-g5",
+      "senderId": "user-5",
+      "body": "I'll come too! I've been curious about that place since they opened.",
+      "timestamp": "2024-01-30T12:08:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-7",
+      "conversationId": "conv-g5",
+      "senderId": "user-10",
+      "body": "Count me in. Does anyone know if it's a cash-only spot?",
+      "timestamp": "2024-01-30T12:09:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-8",
+      "conversationId": "conv-g5",
+      "senderId": "user-3",
+      "body": "It's card/contactless only actually. Checked their site.",
+      "timestamp": "2024-01-30T12:10:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-9",
+      "conversationId": "conv-g5",
+      "senderId": "user-8",
+      "body": "I can't make it today \u2014 deep in postmortem action items. Save me a bowl?",
+      "timestamp": "2024-01-30T12:11:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-10",
+      "conversationId": "conv-g5",
+      "senderId": "user-2",
+      "body": "Ha, ramen doesn't travel well Quinn. Next time!",
+      "timestamp": "2024-01-30T12:12:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-11",
+      "conversationId": "conv-g5",
+      "senderId": "user-7",
+      "body": "Also \u2014 anyone going to the tech meetup tonight? There's a talk on platform engineering at the downtown venue.",
+      "timestamp": "2024-01-30T13:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-12",
+      "conversationId": "conv-g5",
+      "senderId": "user-9",
+      "body": "I was planning to! The speaker did a great blog post on Kubernetes failure domains last year.",
+      "timestamp": "2024-01-30T13:02:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-13",
+      "conversationId": "conv-g5",
+      "senderId": "user-5",
+      "body": "Which venue? I might come if it's not too far from the office.",
+      "timestamp": "2024-01-30T13:03:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-14",
+      "conversationId": "conv-g5",
+      "senderId": "user-7",
+      "body": "It's at the Foundry on 4th. Doors open at 6:30, talk starts at 7. Free entry.",
+      "timestamp": "2024-01-30T13:04:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-15",
+      "conversationId": "conv-g5",
+      "senderId": "user-10",
+      "body": "I'll come. Sounds like a good way to wind down after a chaotic week \ud83d\ude02",
+      "timestamp": "2024-01-30T13:05:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-16",
+      "conversationId": "conv-g5",
+      "senderId": "user-3",
+      "body": "Ha agreed. Also \u2014 random but I found an amazing VS Code extension that auto-generates JSDoc comments from function signatures. Saving me so much time.",
+      "timestamp": "2024-01-30T14:00:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-17",
+      "conversationId": "conv-g5",
+      "senderId": "user-2",
+      "body": "Is this the AI one? I've been experimenting with Copilot for that but the quality is inconsistent.",
+      "timestamp": "2024-01-30T14:02:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-18",
+      "conversationId": "conv-g5",
+      "senderId": "user-3",
+      "body": "Yeah it's AI-powered. Not perfect but it's solid 80% of the time and saves a ton of boilerplate.",
+      "timestamp": "2024-01-30T14:03:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-19",
+      "conversationId": "conv-g5",
+      "senderId": "user-me",
+      "body": "I've been using Copilot for a few months now. Once you learn to treat it as a fast autocomplete rather than a solution generator, it's pretty useful.",
+      "timestamp": "2024-01-30T14:05:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-20",
+      "conversationId": "conv-g5",
+      "senderId": "user-5",
+      "body": "Alex that's a great framing. I was getting frustrated with it generating wrong logic but you're right \u2014 it's better for boilerplate.",
+      "timestamp": "2024-01-30T14:06:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-21",
+      "conversationId": "conv-g5",
+      "senderId": "user-9",
+      "body": "Hot take: AI coding assistants are great until the code review. Then you realize you don't fully understand what you shipped \ud83d\ude05",
+      "timestamp": "2024-01-30T14:08:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-22",
+      "conversationId": "conv-g5",
+      "senderId": "user-8",
+      "body": "Sam speaking from personal experience there. We've all been there.",
+      "timestamp": "2024-01-30T14:09:00Z",
+      "isRead": false
+    },
+    {
+      "id": "msg-g5-23",
+      "conversationId": "conv-g5",
+      "senderId": "user-10",
+      "body": "Haha too real. OK I'm leaving for the ramen place now. See the lunch crew there!",
+      "timestamp": "2024-01-30T14:10:00Z",
+      "isRead": false
+    }
+  ]
+}

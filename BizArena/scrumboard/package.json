@@ -1,0 +1,16 @@
+{
+  "name": "single-turn-scrumboard",
+  "version": "1.0.0",
+  "description": "A multi-column Kanban/Scrum board web application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.54.2"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "open": "^8.4.2"
+  }
+}
