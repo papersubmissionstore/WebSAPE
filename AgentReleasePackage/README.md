@@ -20,7 +20,6 @@ Get the extension running in 2 minutes.
    - Provider: Claude, OpenAI, etc.
    - Model: e.g., `claude-3-5-sonnet`
    - API Key: Paste your key
-   - Click Save
 
 6. **Enter your task** in the sidebar
    - e.g., "Search for 'laptop' on Amazon"
