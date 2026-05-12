@@ -55,11 +55,7 @@ The extension will:
 
 The extension includes navigation instructions for these domains:
 
-- **Shopping**: eBay, Amazon
-- **Search**: Google, Gmail
-- **Development**: GitHub
-- **Social**: Reddit
-- **Test Sites**: WebArena (GitLab, Reddit, Shopping)
+- **Test Sites**: BizArena Outlook
 
 Instructions are automatically loaded when you navigate to these sites.
 
