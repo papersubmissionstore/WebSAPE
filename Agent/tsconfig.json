@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "skipLibCheck": true,
+    "target": "ES2018",
+    "moduleResolution": "bundler",
+    "module": "ES2020",
+    "esModuleInterop": true,
+    "sourceMap": false,
+    "rootDir": ".",
+    "outDir": "dist/js",
+    "noEmitOnError": true,
+    "jsx": "react",
+    "typeRoots": ["node_modules/@types"],
+    "typeRoots": ["node_modules/@types"],
+    "noImplicitAny": false
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "thirdparty"
+  ]
+}

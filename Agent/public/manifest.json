@@ -1,0 +1,52 @@
+{
+  "name": "WebSAPE",
+  "description": "WebSAPE - the right link, at the right moment",
+  "version": "1.0",
+  "manifest_version": 3,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5B90E+PtnOhapHpZh32K5JGtidwKxDCcvS9b9ITzSRGBkc/LrvXuO5RYvYwW60ftoHdO9au9NCWuqfpvOnBZjt2xiCPT7cxKIDOxX8w7qzQ+FKBlX6WQgAR+UQFzEYcFErQp7m3Y2+DogoizoqyEjaFqk24br4kqpEok0amBxiTbceIh9iPi8OeKhu1Hh4+r2rWtQlZkMLnYLr2LhJ8Ge9qsI4k2PKeY0b6sBFqcvCFOYkkyCNFWVFx6D0407No6W+BMyx5l5PhKCwX5ZDargA/WL9tVUEauSbd+uC7k7JqvUUUZYR2OtiSAEFczMlXqjTzzt5pbqE0q0onx2hw0owIDAQAB",
+  "background": {
+    "type": "module",
+    "service_worker": "js/background.js"
+  },
+  "icons": {
+    "16": "icon.ico",
+    "48": "icon.ico",
+    "128": "icon.ico"
+  },
+  "side_panel": {
+    "default_path": "sidebar.html",
+    "openPanelOnActionClick": true
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": false
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": ["<all_urls>"],
+      "js": ["js/content_script.js"]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "windows",
+    "sidePanel",
+    "storage",
+    "scripting",
+    "alarms",
+    "notifications",
+    "downloads",
+    "debugger",
+    "identity",
+    "webRequest"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "web_accessible_resources": [
+    {
+      "matches": ["<all_urls>"],
+      "resources": ["data/webarena_chunks/*", "data/cua_queries.jsonl", "data/auth/*"]
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "@eko-ai/eko-extension-standalone",
+  "version": "1.0.0",
+  "description": "WebSAPE browser extension - Standalone (no server required)",
+  "scripts": {
+    "generate-build-info": "node scripts/generate-build-info.js",
+    "prebuild": "npm run generate-build-info && npm run build:deps",
+    "build:deps": "node scripts/build-deps.js",
+    "build": "webpack --config webpack.config.js"
+  },
+  "author": "WebSAPE Team",
+  "license": "MIT",
+  "keywords": [
+    "websape",
+    "browser-automation",
+    "browser-extension",
+    "llm-agent",
+    "web-automation",
+    "standalone"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/papersubmissionstore/WebSAPE"
+  },
+  "homepage": "https://github.com/papersubmissionstore/WebSAPE#readme",
+  "dependencies": {
+    "antd": "^5.22.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0",
+    "@eko-ai/eko": "workspace:*",
+    "@eko-ai/eko-extension": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.18.2",
+    "@types/express": "^5.0.3",
+    "@types/uuid": "^10.0.0",
+    "@xmldom/xmldom": "~0.8.11",
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "uuid": "^11.1.0",
+    "winston": "^3.17.0",
+    "zod": "^4.0.14",
+    "zod-to-json-schema": "^3.25.0",
+    "eventsource-parser": "3.0.6",
+    "pkce-challenge": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.158",
+    "@types/react": "^18.0.29",
+    "@types/react-dom": "^18.0.11",
+    "copy-webpack-plugin": "^9.0.1",
+    "glob": "^7.1.6",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2 ",
+    "ts-loader": "^8.0.0",
+    "typescript": "^5.0.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^4.0.0",
+    "webpack-merge": "^5.0.0",
+    "@types/node": "^20.19.17",
+    "dotenv": "^16.6.1",
+    "playwright": "^1.55.1"
+  }
+}

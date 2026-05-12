@@ -1,0 +1,470 @@
+{
+"experiences": [
+    {
+      "id": "outlook_email_address_format_recovery",
+      "sites": "outlook",
+      "task": "Send or forward emails to recipients using proper email address format",
+      "summary": "When sending or forwarding emails in Outlook, recipient names must be entered as properly formatted email addresses (e.g., user@domain.com). Entering plain text names results in undeliverable messages. On failure, obtain the correct email format by inferring from the company domain pattern (visible in other emails like <email address>) or searching for emails from that person, then retry with the proper address.",
+      "lessons": [
+        "TRIGGER: Need to send or compose an email to a recipient identified by name only (e.g., '<person>', '<recipient>'). FAILURE SIGNATURE: After clicking Send with plain text name in To field, an 'Undeliverable' message appears from Outlook stating 'Your message wasn't delivered to [Name] because the address is not formatted correctly.' RECOVERY WORKFLOW: (1) Note the failed recipient name from the undeliverable message. (2) Search inbox for emails from that person to obtain their email address (visible in the From field when opening their emails, e.g., <email address>). (3) Click 'New Email' button to open a fresh compose window. (4) Enter the recipient's email in proper format (e.g., <email address> instead of '<person>') in the To field. (5) Re-enter the subject line. (6) Re-compose the message content in the compose-text-area. (7) Click Send button. (8) Verify successful send by checking Sent Items folder shows the email with recent timestamp and no new 'Undeliverable' message appears. VERIFICATION: Successful send shows email in Sent Items folder with current timestamp. The view may automatically switch to Sent Items folder after send. No 'Undeliverable' error appears within 30 seconds. BOUNDARY: This recovery applies when Outlook cannot auto-resolve the name. Always verify the To field contains '@' and domain before sending. Applies to both new emails and forwards requiring recipient email addresses.",
+        "TRIGGER: Need to forward or send an email to a recipient identified by name only (e.g., '<recipient>', '<recipient>'). FAILURE SIGNATURE: After clicking Send with plain text name in To field, an 'Undeliverable' message appears from Outlook stating 'Your message wasn't delivered to [Name] because the address is not formatted correctly.' RECOVERY WORKFLOW: (1) Note the failed recipient name from the undeliverable message. (2) Infer the email format from the company domain pattern visible in other emails (e.g., if <person> uses <email address>, then <recipient> would be <email address>). Alternatively, search inbox for emails from that person to obtain their email address. (3) Click Forward (or New Email) again to open a fresh compose window. (4) Enter the recipient's email in proper format (e.g., <email address> instead of '<recipient>') in the To field. (5) Re-compose the message content in compose-text-area. (6) Click Send button. (7) Verify successful send by checking Sent Items folder shows the email with recent timestamp and the view may automatically switch to Sent Items folder. No new 'Undeliverable' message appears. VERIFICATION: Successful send shows email in Sent Items folder with current timestamp (for forwards, subject has 'Fwd:' prefix). The recipient email appears as a green pill/tag in the To field before sending, indicating it's recognized as valid. No 'Undeliverable' error appears within 30 seconds. BOUNDARY: This recovery applies when Outlook cannot auto-resolve the name. Always verify the To field contains '@' and domain before sending. Infer email format from company domain pattern when the recipient's exact email is unknown but other employees' emails are visible."
+      ],
+      "sourceQueries": [
+        "query_32214484",
+        "query_71a62147",
+        "query_77e66c41",
+        "query_8f1d4e52"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_forward_with_note_workflow",
+      "sites": "outlook",
+      "task": "Forward emails with custom notes or context",
+      "summary": "When forwarding emails with a custom note, click Forward button, enter recipient email address in proper format, click in compose-text-area to position cursor, then type the forwarding note. The note text is added to the message body (position may vary). Verify recipient address format before sending to avoid delivery failures.",
+      "lessons": [
+        "TRIGGER: Task requires forwarding an email with a custom note mentioning specific details from the original message (e.g., 'mention the package with Critical severity and its CVE number'). WORKFLOW: (1) Open the source email to read and extract required details. (2) Scroll through the email content to locate all required information (e.g., vulnerability table showing package name, severity, CVE number). (3) Click the Forward button (id: ribbon-forward) to open compose window. (4) Enter recipient's email address in proper format in compose-to field (e.g., <email address>, not plain text name). (5) Click compose-text-area to position cursor in message body. (6) Type the forwarding note with extracted details (e.g., 'The Critical severity vulnerability in the <package> package (<CVE-ID>) needs immediate attention'). (7) Click Send button (id: btn-send). (8) Verify successful send by checking Sent Items folder for the forwarded message with timestamp. VERIFICATION: Sent Items folder shows the forwarded message with 'Fwd:' prefix in subject line and recent timestamp. No 'Undeliverable' message appears in inbox. BOUNDARY: Extract all required details from the original email before forwarding—do not rely on memory. Use proper email address format to avoid delivery failures requiring retry."
+      ],
+      "sourceQueries": [
+        "query_32214484"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_calendar_day_view_meeting_extraction",
+      "sites": "outlook",
+      "task": "Extract complete daily meeting schedule from calendar",
+      "summary": "When extracting a full day's meeting schedule from Outlook calendar, switch to Day view for the target date to see all meetings in a single vertical timeline. Scroll through the entire day (early morning to evening) to capture all meetings. Day view provides clearer meeting details (title, time, location) than Week view, which may truncate or overlap events.",
+      "lessons": [
+        "TRIGGER: Task requires listing all meetings for a specific day with complete details (start time, end time, location). WORKFLOW: (1) Navigate to Calendar view. (2) Locate the target date in the mini calendar or week view. (3) Click 'Day view' button (title: 'Day view') to switch to single-day timeline. (4) Scroll up to see early morning meetings (starting from 8-9 AM). (5) Scroll down through the entire day to capture all meetings up to evening hours. (6) Extract each meeting's title, start time, end time, and location from the Day view timeline. VERIFICATION: Day view shows meetings in chronological order with clear time slots and full meeting titles. All meetings for the day are visible by scrolling the timeline. BOUNDARY: Week view may show meetings but can truncate titles or make overlapping meetings harder to read. Use Day view when complete meeting details are required for a single day.",
+        "TRIGGER: Need to identify overlapping meetings or back-to-back meetings in a daily schedule. ACTION: In Day view, overlapping meetings appear as side-by-side blocks in the same time slot (e.g., <target event> 10:00-12:00 and A/B Test Review 11:00-11:45 will show the A/B Test block overlapping the <target event> block). Back-to-back meetings appear as consecutive blocks with no gap (e.g., Incident Retro ending at 15:00 and Sprint Demo starting at 15:00). VERIFICATION: Visual inspection of the Day view timeline clearly shows temporal relationships between meetings. BOUNDARY: When calculating total meeting hours with overlaps, count the overlapped time period only once (e.g., if Meeting A is 10:00-12:00 and Meeting B is 11:00-11:45, total time is 2 hours, not 2.75 hours)."
+      ],
+      "sourceQueries": [
+        "query_3d44f642"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_email_compose_comprehensive_workflow",
+      "sites": "outlook",
+      "task": "Compose and send emails with structured multi-part content",
+      "summary": "When composing emails with structured information (lists, schedules, analysis), use the compose window's text area to format content with clear sections, headings, and visual separators. Fill recipient email in proper format (user@domain.com), add descriptive subject line, then compose the message body with all required details before sending.",
+      "lessons": [
+        "TRIGGER: Task requires sending an email with structured data (e.g., meeting schedule with times, overlaps, totals). WORKFLOW: (1) Click 'New Email' button (id: btn-new-email) to open compose window. (2) Enter recipient's email address in proper format in 'To' field (id: compose-to). (3) Enter descriptive subject line in 'Subject' field (id: compose-subject). (4) Click message body area (id: compose-text-area) to position cursor. (5) Type the email content using clear formatting: section headings (e.g., 'THURSDAY, APRIL 23, 2026 - ALL MEETINGS:'), numbered lists for items, visual separators (e.g., '⚠️ OVERLAP:', '🔗 BACK-TO-BACK:'), and summary sections (e.g., 'TOTAL MEETING TIME:'). (6) Include all required data points as specified in the task (start/end times, locations, conflict analysis, totals). (7) Click Send button (id: btn-send). (8) Verify send success by checking Sent Items folder shows the email with recent timestamp. VERIFICATION: Sent Items folder displays the sent email with correct subject line and timestamp. No 'Undeliverable' message appears in inbox. BOUNDARY: Ensure recipient email is in proper format (contains '@' and domain) before sending to avoid delivery failures requiring retry."
+      ],
+      "sourceQueries": [
+        "query_3d44f642"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_rich_text_formatting_workflow",
+      "sites": "outlook",
+      "task": "Apply rich text formatting (bold, italic, underline) to specific words in email body",
+      "summary": "When composing emails in Outlook that require rich text formatting on specific words, use a segment-based workflow: compose the message in segments, enabling formatting buttons before typing the target word, then disabling formatting after. This approach avoids text selection errors and ensures clean formatting without HTML tags appearing as literal text.",
+      "lessons": [
+        "FAILURE SIGNATURE: Agent types entire message first, then attempts to select a specific word within the compose-text-area contenteditable div to apply formatting. Result: multiple failed selection attempts (triple-click selects all text, double-click unreliable for specific words, manual cursor positioning complex), leading to text duplication, visible HTML tags as plain text (e.g., '<b><i>Thursday</i></b>' appearing literally), and repeated cleanup cycles. RECOVERY: (1) Triple-click compose-text-area to select all text. (2) Delete selected text to clear the compose area completely. (3) Follow the segment-based workflow: type message up to target word, enable formatting, type target word, disable formatting, complete message. (4) Verify formatting in preview before sending. STOP CONDITION: Compose area shows clean message with target word visually formatted (no HTML tags as text, no duplicates). If cleanup attempts exceed 2-3 cycles, abandon selection approach and restart with segment-based workflow.",
+        "TRIGGER: Task requires applying bold, italic, or other rich text formatting to a specific word or phrase within an email body (e.g., 'make the words <target item> bold'). WORKFLOW: (1) Click New Email to open compose window. (2) Fill recipient (compose-to) and subject (compose-subject) fields. (3) Click compose-text-area to focus message body. (4) Switch to 'Format Text' tab by clicking the Format Text button to make formatting buttons visible. (5) Type message text UP TO but NOT INCLUDING the target word/phrase. (6) Click formatting buttons (fmt-bold, fmt-italic, etc.) to enable desired formatting—the button will show active/pressed state. (7) Type the target word/phrase with formatting active. (8) Click formatting buttons again to disable formatting—the button will return to normal state. (9) Complete remaining message text. (10) Click Send (btn-send). VERIFICATION: Before sending, visually confirm in the compose preview that the target word displays with the applied formatting (bold/italic styling visible in the preview pane). After send, the view switches to Sent Items folder showing the email with recent timestamp. BOUNDARY: Do NOT attempt to select text after typing and then apply formatting—this requires complex text selection in contenteditable divs and often fails. Do NOT enter HTML tags like <b>word</b> as plain text—they will render as literal characters, not formatting. The formatting buttons must be clicked BEFORE typing the word to be formatted. When applying multiple formats (bold + italic), click all required format buttons before typing the target word."
+      ],
+      "sourceQueries": [
+        "query_4ec53172",
+        "query_a1b2c305"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263",
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_forward_recipient_name_only",
+      "sites": "outlook",
+      "task": "Forward emails to recipients using name-only input when email address is unknown",
+      "summary": "When forwarding emails in Outlook and only the recipient's name is provided (e.g., '<recipient>'), entering the plain text name in the To field is acceptable. Outlook may auto-resolve the name to an email address, or the name may be sufficient for internal directory lookup. Verify successful send by checking for absence of 'Undeliverable' messages and presence of the sent email in Sent Items folder.",
+      "lessons": [
+        "TRIGGER: Task requires forwarding an email to a recipient identified only by name (e.g., 'forward to <recipient>') with no email address provided in the query. WORKFLOW: (1) Click Forward button to open compose window. (2) Enter the recipient's full name in the To field (compose-to) exactly as provided in the query. (3) Compose the forwarding message in compose-text-area. (4) Click Send button (btn-send). (5) Verify successful delivery by checking inbox for absence of 'Undeliverable' messages and checking Sent Items folder for the forwarded email with recent timestamp. VERIFICATION: Successful send shows the email in Sent Items folder with 'Fwd:' prefix in subject line. No 'Undeliverable' error appears in inbox within 30 seconds of sending. BOUNDARY: This approach works when Outlook can resolve the name through internal directory or autocomplete. If an 'Undeliverable' message appears stating 'address is not formatted correctly', apply the email address format recovery workflow (convert name to user@domain.com format and resend)."
+      ],
+      "sourceQueries": [
+        "query_4f4daff5"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_forward_with_data_extraction_workflow",
+      "sites": "outlook",
+      "task": "Forward emails with extracted data analysis from tables or structured content",
+      "summary": "When forwarding emails containing structured data (tables, metrics, reports) with extracted analysis, scroll through the entire email to locate all data sections, extract required values, compose a summary message with key findings, then forward with the analysis prepended to the original content. If initial send fails due to recipient address format error, obtain the correct email address from the recipient's other emails and retry with proper format (user@domain.com).",
+      "lessons": [
+        "TRIGGER: Task requires forwarding an email containing structured data (dependency audit reports, vulnerability tables, metrics) AND extracting specific values to communicate in the forwarding message (e.g., 'call out the affected package, the CVE, and how long the fix will take'). WORKFLOW: (1) Open the source email by clicking it in the inbox. (2) Scroll through the entire email content to locate all relevant data sections (vulnerability tables, dependency lists, impact metrics). (3) Extract all required values by reading visible content (package names, CVE identifiers, severity levels, fix timelines, version numbers). (4) Note the extracted details for reference. (5) Click Forward button (ribbon-forward) to open compose window. (6) Enter recipient email address in proper format (user@domain.com) in To field. (7) Click compose-text-area to position cursor. (8) Type a message that includes: (a) context for the forwarding, (b) all specific extracted values requested in the query formatted clearly with bullet points or structured layout, (c) any actionable request or urgency indicator. (9) Click Send button. (10) If send fails with 'address is not formatted correctly' error, obtain correct email address from recipient's other emails and retry. (11) Verify send success by checking Sent Items folder shows the forwarded message with recent timestamp. VERIFICATION: The forwarded email contains both the custom analysis message with all extracted details AND the original email content with tables/data intact. Sent Items folder displays the email with 'Fwd:' prefix and current timestamp. BOUNDARY: Do not forward before extracting and verifying all required data values. Scroll through entire email if data sections are not immediately visible. Use concrete values from actual data with proper context (e.g., '<package> v9.0.0 → v9.0.3, <CVE-ID>, 2 hours fix time'), not approximations.",
+        "TRIGGER: Task requires forwarding an email containing structured data (user research reports, task completion tables, severity metrics) AND extracting specific values to communicate in the forwarding message (e.g., 'highlight the two onboarding tasks that scored Critical severity and include their success rates'). WORKFLOW: (1) Open the source email by clicking it in the inbox (may require scrolling to locate). (2) Scroll through the entire email content to locate all relevant data sections (tables, charts, metrics, severity indicators). (3) Extract all required values by reading the visible content (e.g., identify rows with 'Critical' severity, note task names and success rate percentages). (4) Store the extracted data using variable_storage for reference. (5) Click Forward button (ribbon-forward) to open compose window. (6) Enter recipient email address in proper format (user@domain.com) in To field. (7) Click compose-text-area to position cursor. (8) Type a forwarding message that includes: (a) context for the forwarding, (b) all specific extracted values requested in the query formatted clearly with visual indicators (e.g., '🔴 CRITICAL #1: Set up <target endpoint> → Success rate: <N>%'), (c) any actionable request or urgency indicator. (9) Click Send button. (10) If send fails with 'address is not formatted correctly' error, locate an email FROM the recipient to obtain their correct email address, then click Forward again and retry with the proper email format. (11) Verify send success by checking that the view switches to Sent Items folder and the forwarded message appears at the top with recent timestamp. VERIFICATION: The forwarded email contains both the custom analysis message with all extracted details AND the original email content with tables/data intact. Sent Items folder displays the email with 'Fwd:' prefix and current timestamp. BOUNDARY: Do not forward before extracting and verifying all required data values. Scroll through entire email if data sections are not immediately visible. Use concrete values from actual data with proper context (e.g., 'Set up <target endpoint> - <N>% success rate - Critical severity'), not approximations. When initial send fails due to address format error, obtain the correct email address from the recipient's other emails before retrying."
+      ],
+      "sourceQueries": [
+        "query_4f4daff5",
+        "query_71a62147",
+        "query_fe5b4729"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_calendar_event_edit_failure_recovery",
+      "sites": "outlook",
+      "task": "Edit calendar events when original event is missing or edit fails to persist",
+      "summary": "When attempting to edit a calendar event that appears to exist but disappears after save, or when the original event cannot be found, create a new event with the required attributes instead of repeatedly searching. Verify event persistence by checking the calendar view after save.",
+      "lessons": [
+        "TRIGGER: Task requires editing an existing calendar event (change title, reschedule time). After opening and editing the event, clicking Save returns to calendar view but the edited event is not visible at either the original or new time slot. RECOVERY: (1) Verify the event no longer exists at its original time slot by scrolling to that time range. (2) Check the target time slot to confirm the event is not there either. (3) Instead of continuing to search, create a new event with the required attributes (title, date, time) using the 'New Event' button. (4) Fill all fields (title, date, start time, end time) and save. (5) Verify the new event appears in the calendar view at the correct time slot. VERIFICATION: After creating the new event, confirm it is visible in the calendar with the correct title and time. The event should appear as a button/card in the calendar grid at the scheduled time. BOUNDARY: Apply this recovery when the edit operation appears to succeed (no error message) but the event vanishes from the calendar. Do not apply if an explicit error message indicates why the save failed—address the specific error instead."
+      ],
+      "sourceQueries": [
+        "query_50a786e4"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_calendar_day_identification",
+      "sites": "outlook",
+      "task": "Identify the correct day of the week when scheduling calendar events",
+      "summary": "When a task specifies a day of the week (e.g., 'this Thursday'), determine the correct date by checking the current date in the calendar interface and counting forward. Verify the day-of-week label matches the target day before creating or editing events.",
+      "lessons": [
+        "TRIGGER: Task specifies a relative day reference like 'this Thursday' or 'next Monday' without an explicit date. WORKFLOW: (1) Check the current date displayed in the calendar interface (e.g., mini calendar shows current date highlighted, or 'Today' button shows current date). (2) Count forward from the current date to find the target day of the week. (3) When viewing the calendar in Week or Work Week view, verify the column header shows the correct day-of-week label (Monday, Tuesday, Wednesday, Thursday, Friday) matching the target day. (4) Note that count forward from the current weekday to the target day. (5) Before creating or editing an event, confirm you are working with the correct date by checking both the numeric date and the day-of-week label. VERIFICATION: The calendar column or day view header should display both the date number and the day name (e.g., the date number and day name (e.g., '15 Wednesday')). BOUNDARY: When the task provides an explicit date (e.g., 'April 24'), use that date directly. When only a day name is given, calculate from the current date visible in the calendar."
+      ],
+      "sourceQueries": [
+        "query_50a786e4"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_email_data_extraction_and_reply",
+      "sites": "outlook",
+      "task": "Extract structured data from emails and compose replies referencing specific details",
+      "summary": "When replying to emails containing structured reports (tables, metrics, escalation lists), scroll through the entire email to locate all required data sections, extract specific values (customer names, ARR, issue details), store key findings, then compose a reply that explicitly references the extracted details. Verify successful send by checking Sent Items folder.",
+      "lessons": [
+        "TRIGGER: Task requires replying to an email containing structured data (escalation reports, metrics tables, customer lists) AND the reply must reference specific extracted values (e.g., 'mention the customer name and their ARR'). WORKFLOW: (1) Locate and open the source email by scrolling through the inbox. (2) Scroll through the entire email content to locate all relevant data sections (tables, lists, metrics). (3) Extract required values by reading visible content (customer names, ARR figures, issue descriptions, severity indicators). (4) Use variable_storage to save key findings for reference (e.g., 'Customer: <customer>, ARR: $<amount>'). (5) Click Reply button (id: btn-reply-inline) to open compose window. (6) Click compose-text-area to position cursor. (7) Type reply message that explicitly includes all extracted details requested in the task. (8) Click Send button (id: btn-send). (9) Verify successful send by checking Sent Items folder shows the reply with 'Re:' prefix and recent timestamp. VERIFICATION: After send, Sent Items folder displays the sent reply at the top of the list with correct subject line and send time. No error messages appear. BOUNDARY: Do not compose the reply before extracting all required data from the source email. Scroll through the entire email if data sections are not immediately visible. Use concrete values from the actual data, not approximations or assumptions.",
+        "TRIGGER: Task requires replying to an email with structured data (incident reports, impact summaries, metrics tables) AND the reply must reference multiple specific extracted values (e.g., 'pull the impact numbers from her email' - exposure window, sessions invalidated, tenants impacted). WORKFLOW: (1) Locate and click the source email in the inbox to open it. (2) Scroll through the entire email content to locate all relevant data sections (Impact Summary tables, metrics, timeline details). (3) Extract all required values by reading visible content (exposure duration, session counts, tenant counts, severity indicators, root cause descriptions). (4) Use variable_storage to save key findings for reference (e.g., 'Exposure window: <N> minutes, Sessions invalidated: <count>, Enterprise tenants impacted: 3'). (5) Click Reply button (id: btn-reply-footer or btn-reply-inline) to open compose window. (6) Click compose-text-area (id: compose-text-area) to position cursor. (7) Type reply message that explicitly includes ALL extracted details requested in the task, formatted clearly (e.g., 'Given the scope of this incident (<duration> exposure window, <count> sessions invalidated across <N> tenants)...'). (8) Click Send button (id: btn-send). (9) Verify successful send by checking that the view switches to Sent Items folder or that the sent email appears at the top of Sent Items with recent timestamp. VERIFICATION: After send, Sent Items folder displays the sent reply with 'Re:' prefix in subject line and current timestamp. The reply body contains all requested impact numbers in context. BOUNDARY: Do not compose the reply before extracting ALL required data from the source email. If data sections are not immediately visible, scroll through the entire email. Use concrete values from the actual data with proper context (not just raw numbers). When the task specifies 'pull the impact numbers', include all relevant metrics (time windows, counts, affected entities) in the reply text."
+      ],
+      "sourceQueries": [
+        "query_5b379b6a",
+        "query_6b0c8c45"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_view_settings_workflow",
+      "sites": "outlook",
+      "task": "Adjust Outlook view settings (zoom and density)",
+      "summary": "To adjust zoom and density settings in Outlook, click the View tab to access view controls, then use the Zoom button to access zoom controls (zoom in/out/reset) and the Density button to switch between Roomy/Cosy/Compact modes. Changes apply immediately without requiring save.",
+      "lessons": [
+        "TRIGGER: Task requires adjusting Outlook view settings (zoom level or density mode). WORKFLOW: (1) Click the 'View' tab button to activate the View ribbon. (2) For zoom adjustments: click 'Zoom' button (id: btn-view-zoom) to reveal zoom controls, then use btn-zoom-in (+), btn-zoom-out (−), or btn-zoom-reset as needed. The current zoom percentage displays between the controls. (3) For density adjustments: click 'Density' button (id: btn-view-density) to reveal density options (Roomy, Cosy, Compact), then click the target density mode button. The active mode is visually indicated. (4) Changes apply immediately to the email list view (Compact shows more condensed spacing, Cosy shows normal spacing, Roomy shows expanded spacing). VERIFICATION: Zoom percentage updates in the zoom control display. Density change is visible in the email list spacing. The selected density option shows active state. BOUNDARY: These are view-only settings that affect display but do not modify email content or folder structure. Multiple adjustments can be made in sequence without intermediate saves."
+      ],
+      "sourceQueries": [
+        "query_6b0c8c45"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_email_selection_low_opacity_checkbox",
+      "sites": "outlook",
+      "task": "Select emails using checkboxes in Outlook inbox",
+      "summary": "When email checkboxes have low opacity (0) and cannot be clicked directly, use an alternative workflow: click the email card itself to select it, then use the Move button to move individual emails one at a time. Multi-selection via Ctrl+Click on email cards does not work reliably—the interface selects one email at a time instead of accumulating selections.",
+      "lessons": [
+        "TRIGGER: Need to select multiple emails to move them to a folder, but clicking checkboxes fails with 'Element found but has very low opacity (0)' error. WORKFLOW: (1) Click directly on the first email card (not the checkbox) to select it. (2) Click the Move button (id: ribbon-move) to open the folder selection dialog. (3) Click the target folder to move the email. (4) Repeat steps 1-3 for each remaining email from the target sender. (5) After moving all emails, verify by clicking the target folder to confirm all emails are present. VERIFICATION: Each move operation reduces the inbox count by 1. The target folder displays all moved emails when clicked. BOUNDARY: Do NOT attempt to multi-select emails using Ctrl+Click on email cards—the interface does not accumulate selections and will only select the most recently clicked email. Do NOT attempt to hover over checkboxes to increase opacity—this does not reliably enable clicking. Move emails one at a time when checkboxes are inaccessible.",
+        "FAILURE SIGNATURE: Agent attempts to click email checkboxes (elements with input type or checkbox role) and receives repeated 'Element found but has very low opacity (0)' errors. Agent may try hovering first, but clicking the checkbox still fails. RECOVERY: (1) Abandon checkbox-based selection entirely. (2) Click the email card itself (the parent container showing sender, subject, date) to select the email. (3) Immediately click the Move button (id: ribbon-move) to open the folder dialog. (4) Click the target folder to complete the move. (5) Repeat for each email requiring movement. (6) Verify completion by checking the target folder contains all expected emails. STOP CONDITION: All emails from the target sender have been moved (inbox no longer shows any emails from that sender when scrolled through completely, and target folder displays all moved emails)."
+      ],
+      "sourceQueries": [
+        "query_75bafdd8"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_search_sender_filtering",
+      "sites": "outlook",
+      "task": "Search for emails from a specific sender in Outlook",
+      "summary": "When searching for emails from a specific sender, use the search operator 'from:Sender Name' to filter results. However, be aware that search results may include emails that mention the sender's name in the content, not just emails FROM that sender. For accurate sender-based filtering, verify each search result by checking the sender field (PS, LC, etc.) in the email list.",
+      "lessons": [
+        "TRIGGER: Need to find all emails from a specific sender (e.g., '<sender>') to move them to a folder. WORKFLOW: (1) Enter 'from:Sender Name' in the search box (id: search-input) and press Enter. (2) Review search results carefully—the search may return emails that mention the sender's name in the body/subject, not just emails FROM that sender. (3) Verify each result by checking the sender initials in the email list (e.g., '<initials>' for <sender>). (4) If search results include irrelevant emails, clear the search and manually scroll through the inbox to identify emails by sender initials. (5) Alternatively, use the inbox view and scroll through to visually identify all emails from the target sender by their initials. VERIFICATION: Each email from the target sender displays their initials (e.g., '<initials>') in the email list. BOUNDARY: The 'from:' search operator may not be perfectly precise—it can return false positives where the sender's name appears in email content. When precision is critical, prefer manual visual identification by sender initials over search-based filtering."
+      ],
+      "sourceQueries": [
+        "query_75bafdd8"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_folder_creation_and_email_move_workflow",
+      "sites": "outlook",
+      "task": "Create a new folder and move emails from a specific sender into it",
+      "summary": "To create a folder and move all emails from a specific sender: (1) Create the folder using the New Folder button, (2) Identify all emails from the sender by scrolling through the inbox and noting their sender initials, (3) Move emails one at a time by clicking the email card, clicking Move, and selecting the target folder, (4) Verify completion by checking the target folder contains all expected emails and the inbox no longer shows emails from that sender.",
+      "lessons": [
+        "TRIGGER: Task requires creating a new folder and moving all emails from a specific sender (e.g., '<sender>') into it. WORKFLOW: (1) Click 'New Folder' button (id: ribbon-new-folder) to open the folder creation dialog. (2) Enter the folder name in the input field (id: new-folder-input) and click Create (id: btn-new-folder-confirm). (3) Verify the folder appears in the sidebar folder list. (4) Scroll through the inbox to identify all emails from the target sender by their initials (e.g., '<initials>' for <sender>). (5) For each email from the target sender: (a) Click the email card to select it, (b) Click Move button (id: ribbon-move), (c) Click the target folder in the dialog. (6) After moving all visible emails, scroll through the inbox again to check for any remaining emails from the sender. (7) Verify completion by clicking the target folder and confirming all expected emails are present. VERIFICATION: The target folder displays all moved emails with the correct sender initials. The inbox no longer shows any emails from the target sender when fully scrolled. The inbox count decreases by the number of emails moved. BOUNDARY: When checkboxes have low opacity and cannot be clicked, do NOT attempt multi-selection—move emails one at a time using the click-email-card → Move → select-folder workflow. Do NOT rely solely on search results to identify all emails from a sender—manually scroll through the inbox to ensure completeness."
+      ],
+      "sourceQueries": [
+        "query_75bafdd8"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_multi_email_cross_reference_workflow",
+      "sites": "outlook",
+      "task": "Extract data from multiple emails and compose cross-referenced analysis",
+      "summary": "When a task requires extracting data from multiple emails (e.g., database performance report from one sender, retention audit from another) and composing a new email that synthesizes findings across both sources, use a phased workflow: (1) locate and extract data from each source email, storing key findings in variables, (2) perform required actions on source emails (download attachments, mark unread, pin, tag), (3) compose the synthesis email referencing stored data from all sources, ensuring proper email address format for recipients.",
+      "lessons": [
+        "TRIGGER: Task requires locating multiple emails from different senders, extracting specific data points from each, performing actions on those emails (download attachments, mark unread, pin, tag with category), then composing a reply or new email to one of the senders that synthesizes findings across both sources. WORKFLOW TEMPLATE: PHASE 1 (Locate & Extract Source Email 1): (1) Navigate to inbox or use search-input with sender name and topic keywords to locate first email. (2) Click the target email to open it. (3) Scroll through entire email content to locate all required data sections (tables, metrics, findings, attachments). (4) Download any required attachments by clicking download buttons on attachment cards. (5) Mark email as unread if required (click ribbon-read button). (6) Pin the email if required (click ribbon-pin button). (7) Store key findings in variable_storage with descriptive variable name (e.g., 'danielFindings: Orders table constraint: <N> GB table growing at <rate>, needs optimization. Timeline pressure: <timeframe>.'). PHASE 2 (Locate & Extract Source Email 2): (1) Clear search if needed and search for second sender's email using sender name or topic keywords. (2) Click to open the target email. (3) Scroll through to view all data sections (retention metrics, audit findings, backlog counts). (4) Apply category tags if required (click ribbon-category, select color). (5) Store key findings in variable_storage with descriptive variable name (e.g., 'mayaFindings: <N> tables over policy, <actual> days retention vs <target>-day target. Deletion backlog: <count> accounts.'). PHASE 3 (Compose Synthesis Email): (1) Read stored variables to access extracted data from both sources. (2) Click Reply button (ribbon-reply) if replying to one of the source emails, OR click 'New Email' button (btn-new-email) if composing to a different recipient. (3) If composing new email: enter recipient's email in proper format (user@domain.com) in compose-to field and enter descriptive subject line in compose-subject. (4) Click compose-text-area to focus message body. (5) Compose message that explicitly connects data points from both sources, using concrete values from stored variables with clear causal links (e.g., 'Your retention gap (<actual> days vs <target>-day policy) and <count>-account deletion backlog are directly contributing to the orders table constraint flagged by the other sender: <N> GB table growing at <rate>. The overage in retention is materially impacting table size.'). (6) Click Send (btn-send). (7) Verify successful send by checking Sent Items folder shows the email with current timestamp and 'Re:' prefix (for replies) or new subject (for new emails). VERIFICATION: All source emails are located, required actions completed (downloads, mark unread, pins, tags applied), stored variables contain extracted data, synthesis email appears in Sent Items folder with all cross-referenced details present in message body showing explicit connections between the two sources. BOUNDARY: Do not compose the synthesis email before extracting and storing data from all source emails. When replying to one source email about findings from another source email, use the Reply button rather than New Email. Scroll through entire source emails to ensure all required data sections are captured before extraction. Use variable_storage to preserve findings across email navigation."
+      ],
+      "sourceQueries": [
+        "query_77e66c41",
+        "query_a7c2d953"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_attachment_download_and_mark_unread",
+      "sites": "outlook",
+      "task": "Download email attachments and mark email as unread",
+      "summary": "When a task requires downloading attachments from an email and marking it as unread, open the email, click the download button on each attachment card to save them, then click the Read/Unread button (ribbon-read) to mark the email as unread. The email will display as unread in the inbox list (bold text, unread styling) after marking.",
+      "lessons": [
+        "TRIGGER: Task requires downloading multiple attachments from an email AND marking that email as unread so it won't be lost track of. WORKFLOW: (1) Locate and open the target email by scrolling through inbox or using search. (2) Identify all attachments in the email (displayed as attachment cards with filename, file size, and download button). (3) Click the download button on each attachment card to save the files (e.g., click download button for '<report>.pdf (<size>)', then click download button for '<data>.csv (<size>)'). (4) After downloading all attachments, click the Read/Unread button (id: ribbon-read) in the ribbon to mark the email as unread. (5) Verify the email appears as unread in the inbox list (bold text, unread indicator visible). VERIFICATION: All attachment files are downloaded (no error messages), and the email displays as unread in the inbox list with bold styling. The Read/Unread button state changes to indicate the email is now unread. BOUNDARY: Download all required attachments before marking the email as unread. The ribbon-read button toggles the read/unread state—ensure you're setting it to unread (not read). Marking an email as unread does not affect the downloaded attachments."
+      ],
+      "sourceQueries": [
+        "query_a7c2d953"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_multi_source_data_extraction_synthesis",
+      "sites": "outlook",
+      "task": "Extract data from multiple emails and compose a single synthesis email with all findings",
+      "summary": "When a task requires extracting specific data points from multiple emails (from different senders or topics) and composing a single email that consolidates all findings, use a phased workflow: (1) identify and open each source email, (2) scroll through each email to locate and extract all required data, (3) compose a single email with all extracted information organized by topic, ensuring proper email address format for recipients.",
+      "lessons": [
+        "TRIGGER: Task requires gathering information from multiple emails (e.g., accessibility audit from <sender A>, test results from <sender B>, dependency audit from <sender A>) and sending ONE email that summarizes all findings to a recipient. WORKFLOW TEMPLATE: PHASE 1 (Identify Source Emails): Navigate to inbox and visually scan email list to identify all source emails by sender name and subject line keywords. PHASE 2 (Extract from Each Source): For each source email: (1) Click the email to open it. (2) Scroll through the entire email content to locate all required data sections (tables, metrics, findings). (3) Extract specific values requested in the task (e.g., total issues count, Critical count, conversion rate lift percentage, revenue impact, package name, CVE identifier). (4) Note the extracted data for reference. PHASE 3 (Compose Synthesis Email): (1) Click 'New Email' button (id: btn-new-email) to open compose window. (2) Enter recipient's email address in proper format (user@domain.com) in compose-to field. (3) Enter descriptive subject line in compose-subject field. (4) Click compose-text-area to focus message body. (5) Compose message organized by topic/source, with each section clearly labeled (e.g., '1. Accessibility Audit Status (from <sender A>):', '2. A/B Test Results for <experiment ID> (from Analytics Team):', '3. Critical Vulnerability from Dependency Audit (from <sender A>):'). (6) Include all specific data points extracted from each source email with concrete values (not approximations). (7) Click Send button (id: btn-send). (8) Verify successful send by checking that the view switches to Sent Items folder and the email appears at the top with current timestamp. VERIFICATION: Sent Items folder displays the sent email with correct subject line and timestamp. The email body contains all required data points from all source emails, organized clearly by topic. BOUNDARY: Do not compose the synthesis email before extracting data from ALL source emails. Scroll through entire source emails to ensure all required data sections are captured. When the task specifies multiple data points from each source (e.g., 'how many issues were found and how many are Critical'), extract ALL specified values, not just one. Use concrete numbers and identifiers from the actual data (e.g., '23 total issues, with 4 Critical', '+20.8% conversion rate lift', '<package> package with <CVE-ID>'), not summaries or approximations."
+      ],
+      "sourceQueries": [
+        "query_b8ee1395"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_email_checkbox_low_opacity_multi_select",
+      "sites": "outlook",
+      "task": "Select multiple emails using checkboxes when checkboxes have low opacity",
+      "summary": "When email checkboxes have low opacity (0) and cannot be clicked directly, use an alternative workflow: click the email card itself to select it (which toggles the checkbox), then use bulk actions like Archive or Move. Hovering over email cards does not reliably increase checkbox opacity. Multi-selection via Ctrl+Click on email cards does not work—the interface selects one email at a time instead of accumulating selections. Select emails one at a time by clicking the card, verify the selection count increases, then apply the bulk action.",
+      "lessons": [
+        "TRIGGER: Need to select multiple emails to archive or move them, but clicking checkboxes fails with 'Element found but has very low opacity (0)' error. WORKFLOW: (1) Click directly on the first email card (not the checkbox) to select it—this toggles the checkbox state. (2) Verify the selection count increases (e.g., '1 selected' → '2 selected'). (3) Repeat for each email requiring selection by clicking its card. (4) After selecting all target emails, use the bulk action button (Archive, Move, Delete) to apply the action to all selected emails. (5) Verify completion by checking the target folder or inbox count. VERIFICATION: Each card click increases the selection count displayed at the top of the email list. The selected email cards show a visual indicator (border, background color change). After bulk action, the selection count resets to 0 and the emails are moved/archived. BOUNDARY: Do NOT attempt to multi-select emails using Ctrl+Click on email cards—the interface does not accumulate selections and will only select the most recently clicked email. Do NOT attempt to hover over checkboxes to increase opacity—this does not reliably enable clicking. Select emails one at a time by clicking the card, verify the count after each click, then apply the bulk action once all are selected.",
+        "FAILURE SIGNATURE: Agent attempts to click email checkboxes (elements with input type or checkbox role) and receives repeated 'Element found but has very low opacity (0)' errors. Agent may try hovering first, but clicking the checkbox still fails. Agent may attempt to click multiple email cards expecting multi-selection, but the selection count does not accumulate beyond 1-2 emails. RECOVERY: (1) Abandon checkbox-based selection entirely. (2) Click the first email card itself (the parent container showing sender, subject, date) to select it. (3) Verify the selection count increases (check the '1 selected' / '2 selected' text at the top). (4) Click the next email card to select it. (5) Verify the count increases again. (6) Repeat for all emails requiring selection. (7) Once all target emails are selected (verify final count matches expected number), click the bulk action button (Archive, Move, Delete). (8) Verify completion by checking the target folder contains all expected emails or the inbox no longer shows them. STOP CONDITION: All emails requiring action have been selected (selection count matches expected number) and the bulk action has been applied successfully (emails moved/archived, selection count reset to 0)."
+      ],
+      "sourceQueries": [
+        "query_df3b4202"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_inbox_cleanup_flag_and_archive_workflow",
+      "sites": "outlook",
+      "task": "Clean up inbox by flagging specific emails and archiving external emails while preserving internal emails",
+      "summary": "When cleaning up an inbox with instructions to flag specific emails (e.g., Azure invoice) and archive all external emails while preserving internal emails, use a phased workflow: (1) navigate to the inbox and identify all email categories (Focused vs Other tabs), (2) locate and flag the target email, (3) systematically select all external emails (marked with [External] tag) except the flagged one, (4) apply the Archive bulk action. When checkboxes have low opacity, select emails by clicking the email cards directly.",
+      "lessons": [
+        "TRIGGER: Task requires flagging a specific email (e.g., 'Azure billing invoice') and archiving all external emails (newsletters, GitHub, LinkedIn, npm, Slack, etc.) while preserving internal team emails. WORKFLOW TEMPLATE: PHASE 1 (Identify Email Structure): (1) Navigate to inbox at the target URL. (2) Check both 'Focused' and 'Other' tabs to see all emails. (3) Scroll through each tab to identify: (a) the target email to flag (by sender name and subject keywords), (b) all external emails (marked with '[External]' tag), (c) all internal emails (no '[External]' tag). PHASE 2 (Flag Target Email): (1) Locate the target email (e.g., '<external sender> [External]' with subject containing 'invoice'). (2) Click the email card to select it. (3) Click the Flag button (id: ribbon-flag) in the ribbon. (4) Verify the flag icon becomes active on the email card. PHASE 3 (Select External Emails for Archiving): (1) Scroll to the top of the email list. (2) For each external email EXCEPT the flagged one: click the email card to select it (checkboxes may have low opacity—click the card itself, not the checkbox). (3) Verify the selection count increases after each click (e.g., '1 selected' → '2 selected' → '3 selected'). (4) Continue until all external emails except the flagged one are selected. PHASE 4 (Archive Selected Emails): (1) Verify the selection count matches the expected number of external emails minus the flagged one. (2) Click the Archive button (id: ribbon-archive) in the ribbon. (3) Verify the archived emails disappear from the inbox and the selection count resets to 0. (4) Check the Archive folder to confirm all emails are present. VERIFICATION: The flagged email remains in the inbox with an active flag icon. All external emails except the flagged one are moved to the Archive folder. All internal emails remain in the inbox. The inbox count decreases by the number of archived emails. BOUNDARY: Do NOT archive the flagged email—verify it is NOT selected before clicking Archive. When checkboxes have low opacity, click the email card itself to select it, not the checkbox. Select emails one at a time and verify the count after each selection. Do NOT rely solely on search results to identify all emails—manually scroll through the inbox to ensure completeness."
+      ],
+      "sourceQueries": [
+        "query_df3b4202"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_multi_recipient_reply_workflow",
+      "sites": "outlook",
+      "task": "Reply to multiple emails from different senders with contextually appropriate messages",
+      "summary": "When a task requires replying to multiple emails from different senders (e.g., <sender> and <recipient>), use a phased workflow: (1) locate all target emails by scrolling through the inbox, (2) open and read each email to extract key details, (3) compose contextually appropriate replies referencing specific content from each email, (4) send each reply and verify in Sent Items folder. Navigate back to Inbox between replies to locate the next target email.",
+      "lessons": [
+        "TRIGGER: Task requires sending replies to multiple emails from different senders, each with specific instructions about what to communicate (e.g., 'reply to <sender A> telling them to prioritize the 4 Critical issues' AND 'reply to <recipient B> agreeing that <high-priority items> should be top priorities'). WORKFLOW TEMPLATE: PHASE 1 (Locate All Target Emails): (1) Navigate to inbox. (2) Scroll through the email list to identify all target emails by sender name and subject line keywords. (3) Note the location/position of each target email for later access. PHASE 2 (Reply to First Email): (1) Click the first target email to open it. (2) Scroll through the entire email content to extract all required details (issue counts, severity levels, metrics, findings). (3) Click Reply button (btn-reply-footer or btn-reply-inline) to open compose window. (4) Click compose-text-area to position cursor. (5) Type reply message that explicitly addresses the specific instruction from the task, referencing concrete details from the email (e.g., 'please prioritize the 4 Critical issues in the next sprint'). (6) Click Send button (btn-send). (7) Verify send success by checking that the view switches to Sent Items folder. PHASE 3 (Reply to Next Email): (1) Click Inbox folder to navigate back to the inbox. (2) Scroll to locate the next target email. (3) Click the email to open it. (4) Scroll through to read all content and extract required details. (5) Click Reply button. (6) Click compose-text-area. (7) Type reply message addressing the specific instruction for this email, referencing concrete details (e.g., 'I completely agree that <high-priority items> should be top priorities'). (8) Click Send button. (9) Verify send success by checking Sent Items folder shows both sent replies with current timestamps. VERIFICATION: After sending all replies, Sent Items folder displays all sent emails with 'Re:' prefix in subject lines and recent timestamps. Each reply body contains contextually appropriate content referencing specific details from the source email. BOUNDARY: Do not compose replies before reading the full email content to extract required details. Navigate back to Inbox between replies to locate the next target email. When the task specifies what to communicate in each reply, ensure the reply text explicitly addresses those instructions with concrete references to the email content (issue counts, metrics, findings)."
+      ],
+      "sourceQueries": [
+        "query_e153b22c"
+      ],
+      "sourceTaskRuns": [
+        "task_57bc7263"
+      ]
+    },
+    {
+      "id": "outlook_calendar_multi_email_cross_reference_board_meeting_workflow",
+      "sites": "outlook",
+      "task": "Extract data from multiple emails and update calendar event notes with cross-referenced summaries",
+      "summary": "When a task requires extracting specific information from multiple emails (ROI forecasts, launch readiness matrices, incident reports) and updating a calendar event's notes field with synthesized summaries, use a phased workflow: (1) locate and open each source email in Mail view, scrolling through entire content to extract all required data points, (2) store extracted findings in variables for reference, (3) switch to Calendar view and change to the required view mode (Week/Day), (4) locate the target calendar event, click to open the event popup, click Edit event, (5) click the notes textarea (id: cee-notes-input), compose a structured summary referencing all extracted data with clear section headings, (6) save the event, (7) complete any additional calendar actions (accept other meetings), (8) navigate to Teams to post follow-up notifications.",
+      "lessons": [
+        "TRIGGER: Task requires extracting data from multiple emails (e.g., '<report title>' for ROI case, '<report title>' for launch blockers) AND updating a calendar event's notes field with summaries of that extracted information AND accepting another meeting invitation AND posting a Teams notification. WORKFLOW TEMPLATE: PHASE 1 (Extract from Email Sources): (1) Navigate to Outlook at the specified URL. (2) For each source email: click the email to open it, scroll through entire content to locate all required data sections (forecast tables, blocker matrices, metrics), extract specific values (opportunity amounts, blocker statuses, success rates), store findings in variable_storage with descriptive names (e.g., 'roiCase', 'launchBlockers'). PHASE 2 (Calendar View Setup): (1) Click Calendar button to switch to Calendar view. (2) Click the required view button (Week view, Day view) to change calendar display mode. (3) Navigate to the correct week using btn-cal-next or btn-cal-prev if the target event is not in the current week. PHASE 3 (Update Calendar Event Notes): (1) Locate the target calendar event by title (e.g., '<target event>') in the week view. (2) Click the event to open the event popup. (3) Click 'Edit event' button (id: btn-ev-popup-edit) to open the event editor. (4) Click the notes textarea (id: cee-notes-input) to focus it. (5) Use input_text to enter structured notes with clear section headings (e.g., 'ROI Case (Enterprise Expansion Forecast - Q2):', 'Launch Blockers (March Launch Readiness Matrix):') followed by the extracted data from stored variables. (6) Click Save button (id: btn-cee-save) to persist the changes. (7) Click the close button (id: btn-ev-popup-close) if the popup remains open. PHASE 4 (Accept Other Meetings): (1) Navigate to the week containing the meeting to accept using btn-cal-next/prev. (2) Click the meeting event to open its popup. (3) Click the 'Accept' button to accept the invitation. (4) Close the popup. PHASE 5 (Teams Notification): (1) Navigate to the Teams URL. (2) Click the target channel in the sidebar. (3) Click the message input field (id: message-input). (4) Type the notification message. (5) Click the send button (id: send-btn). VERIFICATION: After updating the calendar event, the notes field contains the structured summaries with all extracted data points. The accepted meeting shows accepted status in the calendar. The Teams channel displays the sent notification message with a recent timestamp. BOUNDARY: Extract all required data from source emails BEFORE switching to Calendar view—do not navigate back and forth between Mail and Calendar. Store extracted data in variables to preserve it across view changes. When updating calendar event notes, use clear section headings to organize information from multiple sources. Scroll through entire source emails to ensure all required data sections are captured."
+      ],
+      "sourceQueries": [
+        "query_48426261"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_calendar_week_view_navigation_and_event_management",
+      "sites": "outlook",
+      "task": "Navigate calendar weeks and manage events across multiple weeks",
+      "summary": "When managing calendar events that span multiple weeks (e.g., updating an event in the current week and accepting an invitation in the next week), use the week navigation buttons (btn-cal-next, btn-cal-prev) to move between weeks. Click events to open popups, use 'Edit event' to modify existing events, and use Accept/Tentative/Decline buttons to respond to meeting invitations. The calendar view persists the selected view mode (Week, Day, Work Week) across navigation.",
+      "lessons": [
+        "TRIGGER: Task requires interacting with calendar events in different weeks (e.g., 'update <target event> notes' in week 1 and 'accept Tech Debt Prioritization meeting' in week 2). WORKFLOW: (1) Ensure calendar is in the desired view mode (Week view, Day view) by clicking the view button if needed. (2) Locate the first target event in the current week view. (3) Click the event to open the event popup showing event details (title, time, location, attendees). (4) For editing: click 'Edit event' button (id: btn-ev-popup-edit) to open the event editor, make changes to fields (title, date, time, location, notes), click Save (id: btn-cee-save). (5) For accepting invitations: click the 'Accept' button in the event popup, then close the popup (id: btn-ev-popup-close). (6) To navigate to a different week: click btn-cal-next to move forward one week or btn-cal-prev to move back one week. The week range updates in the calendar header (e.g., '<current week>' → '<next week>'). (7) Repeat steps 3-5 for events in the new week. VERIFICATION: After editing an event, the calendar view shows the updated event. After accepting an invitation, the event displays with accepted status (solid color instead of tentative styling). Week navigation updates the visible date range and displays events for the new week. BOUNDARY: Use btn-cal-next/prev for week-by-week navigation—do not attempt to jump to arbitrary dates without using these buttons. Close event popups (btn-ev-popup-close) after completing actions to return to the calendar view. The event editor (opened via 'Edit event') requires clicking Save to persist changes—closing without saving discards modifications."
+      ],
+      "sourceQueries": [
+        "query_48426261"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_unread_email_identification_and_marking",
+      "sites": "outlook",
+      "task": "Locate and open multiple unread emails by topic to mark them as read",
+      "summary": "When locating multiple unread emails by topic (e.g., automated alerts with specific subjects like disk usage, SSL certificate, API rate limit), check both the Focused and Other tabs in Outlook. Automated alerts and external emails often appear in the Other tab rather than Focused. Scroll through the entire inbox to locate all target emails before opening them.",
+      "lessons": [
+        "TRIGGER: Task requires opening multiple unread emails identified by sender and subject keywords (e.g., 'open the three unread automated alert emails — disk usage warning, SSL certificate expiry, and API rate limit exceeded'). WORKFLOW: (1) Navigate to Outlook inbox. (2) Check both 'Focused' and 'Other' tabs—automated alerts and external emails often appear in the Other tab. (3) Scroll through the email list in the active tab to locate all target emails by sender name (e.g., 'Automated Alerts') and subject keywords. (4) For each target email: click the email card to open it and mark it as read. (5) After opening all emails, verify the inbox unread count has decreased by the number of emails opened. VERIFICATION: Each opened email displays as 'read' in the email list (no bold text, read styling visible). The inbox unread count decreases accordingly. BOUNDARY: Do not assume all emails are in the Focused tab—always check the Other tab for automated alerts, newsletters, and external emails. Scroll through the entire tab to ensure all target emails are located before opening them."
+      ],
+      "sourceQueries": [
+        "query_a1b2c403"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_flag_email_workflow",
+      "sites": "outlook",
+      "task": "Flag emails for follow-up action",
+      "summary": "To flag an email in Outlook, open the email by clicking its card in the inbox, then click the Flag button (id: ribbon-flag) in the ribbon. The flag icon becomes active on the email card, and the email appears in the Flagged folder. Flagging is independent of read/unread status.",
+      "lessons": [
+        "TRIGGER: Task requires flagging a specific email for follow-up (e.g., 'flag the SSL certificate expiry email since it needs action before March 17'). WORKFLOW: (1) Locate the target email in the inbox by scrolling through the email list or using search. (2) Click the email card to open it. (3) Click the Flag button (id: ribbon-flag) in the ribbon. (4) Verify the flag icon becomes active (button shows active state) on the email card in the inbox list. VERIFICATION: After flagging, the email displays a flag icon in the inbox list. The email appears in the Flagged folder when that folder is clicked. The flag status persists across sessions. BOUNDARY: Flagging an email does not change its read/unread status—these are independent properties. An email can be flagged while unread, or flagged after being marked as read."
+      ],
+      "sourceQueries": [
+        "query_a1b2c403"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_scrumboard_teams_cross_site_alert_management_workflow",
+      "sites": "outlook,scrumboard,teams",
+      "task": "Complete multi-step alert management workflows across Outlook, ScrumBoard, and Teams",
+      "summary": "For tasks requiring sequential operations across Outlook (open and flag alert emails), ScrumBoard (update task priority and add subtasks), and Teams (post alert notifications), complete each site's operations in sequence, verifying changes at each stage before navigating to the next site. Use the local URLs provided in the task instructions rather than public internet sites.",
+      "lessons": [
+        "TRIGGER: Task requires completing multiple operations across Outlook (open unread alert emails, flag specific email), ScrumBoard (change task priority, add subtask), and Teams (post alert notification to channel). WORKFLOW TEMPLATE: PHASE 1 (Outlook Alert Management): (1) Navigate to Outlook at the specified local URL (e.g., http://127.0.0.1:3101). (2) Check both Focused and Other tabs to locate all target unread emails by sender and subject keywords. (3) Open each target email by clicking its card to mark it as read. (4) Flag the specified email by clicking the Flag button (id: ribbon-flag). (5) Verify all emails are marked as read and the flagged email shows the flag icon. PHASE 2 (ScrumBoard Task Updates): (1) Navigate to ScrumBoard at the specified local URL (e.g., http://127.0.0.1:3100). (2) Locate the target task card on the board. (3) Click the task card to open the detail modal. (4) Change the priority using select_option on the Priority dropdown (id: modal-priority). (5) Click '+ Add Subtask' button (id: add-subtask-btn), enter subtask title in the Create Issue dialog, click 'Create Issue' (id: create-submit). (6) Click 'Save Changes' (id: modal-save) to persist all changes. (7) Verify the task card displays the new priority border color and subtask counter. PHASE 3 (Teams Alert Notification): (1) Navigate to Teams at the specified local URL (e.g., http://127.0.0.1:3102). (2) Click the target channel in the sidebar to open it. (3) Click the message input field (id: message-input), type the alert notification message, click send button (id: send-btn). (4) Verify the message appears in the conversation with a recent timestamp. VERIFICATION: After completing all phases, verify: Outlook shows flagged email and reduced unread count, ScrumBoard shows updated task priority and subtask counter, Teams shows posted message in target channel. BOUNDARY: Use only the local URLs provided in the task instructions (e.g., http://127.0.0.1:3101 for Outlook, http://127.0.0.1:3100 for ScrumBoard, http://127.0.0.1:3102 for Teams)—do not navigate to public internet sites like outlook.com or teams.microsoft.com. Complete all operations on one site before navigating to the next to avoid losing unsaved changes."
+      ],
+      "sourceQueries": [
+        "query_a1b2c403"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_calendar_event_attendee_removal_workflow",
+      "sites": "outlook",
+      "task": "Remove attendees from calendar events",
+      "summary": "To remove an attendee from a calendar event in Outlook, navigate to Calendar view, switch to Month view to locate the event, click the event to open the popup, click 'Edit event' (id: btn-ev-popup-edit), click the '×' remove button next to the attendee to remove, then click Save (id: btn-cee-save) to persist the change.",
+      "lessons": [
+        "TRIGGER: Task requires removing a specific attendee from a calendar event (e.g., 'remove jordan.lee@company.com from the Retrospective event'). WORKFLOW: (1) Navigate to Outlook at the specified URL. (2) Click the Calendar button to switch to Calendar view. (3) Click 'Month view' button to see all events across the month and locate the target event more easily. (4) Click the target event (e.g., 'Retrospective') to open the event details popup. (5) Click 'Edit event' button (id: btn-ev-popup-edit) to open the event editor. (6) In the Attendees section, locate the attendee to remove by name (e.g., 'Jordan Lee'). (7) Click the '×' remove button next to that attendee. (8) Verify the attendee disappears from the attendee list. (9) Click Save button (id: btn-cee-save) to persist the changes. (10) The event popup closes and the calendar view updates. VERIFICATION: After save, the event no longer shows the removed attendee in the attendee list when reopened. The event remains on the calendar with the updated attendee list. BOUNDARY: Use Month view to locate events across the entire month rather than scrolling through Week view. The '×' remove button immediately removes the attendee from the editor—no additional confirmation is needed before saving."
+      ],
+      "sourceQueries": [
+        "query_a1b2c404"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_calendar_event_decline_workflow",
+      "sites": "outlook",
+      "task": "Decline calendar event invitations",
+      "summary": "To decline a calendar event invitation in Outlook, locate the event in Month view, click the event to open the popup, then click the 'Decline' button. The event is removed from the calendar view after declining.",
+      "lessons": [
+        "TRIGGER: Task requires declining a calendar event invitation (e.g., 'decline the <event name> event'). WORKFLOW: (1) In Calendar view, ensure Month view is active to see all events. (2) Locate the target event by title (e.g., '<event name>') in the calendar grid. (3) Click the event to open the event details popup. (4) Review the event details (time, location, organizer, attendees). (5) At the bottom of the popup, locate the RSVP buttons: Accept, Tentative, Decline. (6) Click the 'Decline' button. (7) The event popup closes and the event is removed from the calendar view. VERIFICATION: After declining, the event no longer appears in the calendar grid for that date. The decline action is processed immediately without requiring additional confirmation. BOUNDARY: Declining an event removes it from your calendar view but does not delete the event for other attendees. The organizer receives a decline notification."
+      ],
+      "sourceQueries": [
+        "query_a1b2c404"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_scrumboard_teams_cross_site_task_redistribution_workflow",
+      "sites": "outlook,scrumboard,teams",
+      "task": "Complete multi-step task redistribution workflows across ScrumBoard, Outlook, and Teams",
+      "summary": "For tasks requiring sequential operations across ScrumBoard (task reassignment and priority updates), Outlook (calendar event attendee removal and event decline), and Teams (notification messages), complete each site's operations in sequence, verifying changes at each stage before navigating to the next site. Use the local URLs provided in the task instructions.",
+      "lessons": [
+        "TRIGGER: Task requires completing multiple operations across ScrumBoard (reassign tasks, update priority), Outlook (remove event attendee, decline event), and Teams (send notification message). WORKFLOW TEMPLATE: PHASE 1 (ScrumBoard Task Reassignment): (1) Navigate to ScrumBoard at the specified local URL (e.g., http://127.0.0.1:3100). (2) For each task requiring reassignment: search by task ID (id: search-input), click task card, update Assignee dropdown (id: modal-assignee) and optionally Priority dropdown (id: modal-priority), click Save Changes (id: modal-save), clear search (id: search-clear). (3) Verify all task cards show updated assignee initials and priority indicators. PHASE 2 (Outlook Calendar Updates): (1) Navigate to Outlook at the specified local URL (e.g., http://127.0.0.1:3101). (2) Click Calendar button to switch to Calendar view. (3) Click Month view to locate events. (4) For attendee removal: click event, click Edit event (id: btn-ev-popup-edit), click '×' next to attendee to remove, click Save (id: btn-cee-save). (5) For event decline: click event, click Decline button. (6) Verify calendar updates (attendee removed from event, declined event removed from calendar). PHASE 3 (Teams Notification): (1) Navigate to Teams at the specified local URL (e.g., http://127.0.0.1:3102). (2) Click the target conversation in the sidebar. (3) Click message input field (id: message-input), type notification message, click send button (id: send-btn). (4) Verify message appears in conversation with timestamp. VERIFICATION: After completing all phases, verify: ScrumBoard shows updated task assignments and priorities, Outlook shows updated calendar events, Teams shows sent notification message. BOUNDARY: Use only the local URLs provided in the task instructions (e.g., http://127.0.0.1:3100 for ScrumBoard, http://127.0.0.1:3101 for Outlook, http://127.0.0.1:3102 for Teams)—do not navigate to public internet sites. Complete all operations on one site before navigating to the next to avoid losing unsaved changes. Use Month view in Outlook Calendar to efficiently locate events across the entire month."
+      ],
+      "sourceQueries": [
+        "query_a1b2c404"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_scrumboard_cross_site_hiring_pipeline_workflow",
+      "sites": "outlook,scrumboard",
+      "task": "Complete multi-step workflows across Outlook and ScrumBoard involving email reply-all with recommendations and task management",
+      "summary": "For tasks requiring sequential operations across Outlook (reply-all to emails with data-driven recommendations) and ScrumBoard (filter tasks, update story points, create issue links), complete each site's operations in sequence, verifying changes at each stage before navigating to the next site. Use the local URLs provided in the task instructions.",
+      "lessons": [
+        "TRIGGER: Task requires replying to an email with data-driven recommendations (e.g., 'reply-all to <sender>'s hiring pipeline update recommending to prioritize the <role A> role given it has the fewest onsite candidates and no offer yet') AND completing ScrumBoard operations (filter by bug type, set story points, link issues). WORKFLOW TEMPLATE: PHASE 1 (Outlook Email Analysis and Reply): (1) Navigate to Outlook at the specified local URL (e.g., http://127.0.0.1:3101). (2) Scroll through inbox to locate the target email by sender name and subject keywords (e.g., '<sender>' and '<report subject>'). (3) Click the email to open it and read the full content. (4) Scroll through the entire email to locate all relevant data sections (tables showing role metrics, candidate pipeline stages, offer status). (5) Extract specific data points that support the recommendation (e.g., <role A>: 2 onsite candidates, 0 offers vs <role B>: 5 onsite candidates, 1 offer pending). (6) Click Reply All button (id: ribbon-reply-all) to respond to all recipients. (7) Add required Cc recipients by entering email addresses in proper format (user@domain.com) in the Cc field (id: compose-cc). (8) Click compose-text-area (id: compose-text-area) to position cursor. (9) Compose a professional recommendation message that explicitly references the extracted data points with clear reasoning (e.g., 'I recommend we prioritize the <role A> role for the next interview loop. Key reasons: The <role A> position has the fewest onsite candidates (only 2 compared to 5 for <role B>), and no offer has been extended yet for this role, while <role B> already has an offer pending.'). (10) Click Send button (id: btn-send). (11) Verify successful send by checking that the view switches to Sent Items folder and the email appears at the top with recent timestamp. PHASE 2 (ScrumBoard Task Management): (1) Navigate to ScrumBoard at the specified local URL (e.g., http://127.0.0.1:3100). (2) Apply filters as required (e.g., click filter-type dropdown, select 'Bug' using select_option). (3) Navigate between Board/Backlog views as needed to locate target tasks. (4) Use search box (id: search-input) to quickly locate specific task IDs if not visible in current view. (5) Click task card to open detail modal. (6) Update story points by clicking Story Points dropdown (id: modal-story-points) and using select_option to choose the target value. (7) Add issue links by: (a) scrolling to Linked Issues section, (b) using select_option on link-target-select dropdown to choose target issue by ID (e.g., '<ISSUE-ID>'), (c) verifying link-type-select shows correct relationship type (e.g., 'blocks'), (d) clicking Add Link button (id: add-link-btn), (e) verifying the link appears in the Linked Issues section with correct relationship label and lock icon. (8) Click Save Changes (id: modal-save) to persist all changes. (9) Verify changes by checking task card on board shows updated story points and lock icon indicating link relationship. VERIFICATION: After completing all phases, verify: Outlook Sent Items shows the reply-all email with correct recipients (To and Cc), subject line with 'Re:' prefix, and message body containing data-driven recommendation with specific metrics. ScrumBoard shows updated task with correct story points value, applied filters, and linked issues displaying bidirectional relationship (source task 'blocks' target, target task 'is blocked by' source) with lock icons on both task cards. BOUNDARY: Use only the local URLs provided in the task instructions (e.g., http://127.0.0.1:3101 for Outlook, http://127.0.0.1:3100 for ScrumBoard)—do not navigate to public internet sites. Extract all required data from source emails BEFORE composing the reply to ensure accurate references. When linking issues in ScrumBoard, use select_option with just the issue ID format (e.g., '<ISSUE-ID>') rather than the full title. Complete all operations on one site before navigating to the next to avoid losing unsaved changes."
+      ],
+      "sourceQueries": [
+        "query_d9a7c402"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    },
+    {
+      "id": "outlook_scrumboard_cross_site_pre_triage_workflow",
+      "sites": "outlook,scrumboard",
+      "task": "Complete multi-step pre-triage workflows across Outlook and ScrumBoard",
+      "summary": "For tasks requiring sequential operations across Outlook (pin emails, categorize emails, download attachments) and ScrumBoard (apply filters, update task priority, add subtasks), complete each site's operations in sequence, verifying changes at each stage before navigating to the next site. Use the local URLs provided in the task instructions.",
+      "lessons": [
+        "TRIGGER: Task requires completing multiple operations across Outlook (pin email, categorize email as red, download attachment) AND ScrumBoard (apply tag filter, change task priority, add subtask). WORKFLOW TEMPLATE: PHASE 1 (Outlook Email Management): (1) Navigate to Outlook at the specified local URL (e.g., http://127.0.0.1:3101). (2) Scroll through inbox to locate all target emails by sender name and subject keywords. (3) For pinning: click target email to open it, click Pin button (id: ribbon-pin), verify pin icon appears. (4) For attachment download: while email is open, click download button on attachment card to save file. (5) For categorization: scroll to locate target email, click email card to select it, click Category button (id: ribbon-category), click target color (e.g., 'Red'), verify colored dot appears next to email in list. PHASE 2 (ScrumBoard Task Management): (1) Navigate to ScrumBoard at the specified local URL (e.g., http://127.0.0.1:3100). (2) Apply tag filter by clicking filter dropdown (id: filter-tag), using get_select_options to view available tags, then select_option to choose target tag (e.g., 'backend'). (3) Locate target task card on filtered board view. (4) Click task card to open detail modal. (5) Change priority by clicking Priority dropdown (id: modal-priority), using select_option to choose target priority (e.g., 'High'). (6) Add subtask by clicking '+ Add Subtask' button (id: add-subtask-btn), entering subtask title in Title field (id: create-title), clicking 'Create Issue' (id: create-submit). (7) Click 'Save Changes' (id: modal-save) to persist all changes. (8) Verify changes by checking task card shows updated priority indicator (colored dot/border) and subtask counter (e.g., '0/1'). VERIFICATION: After completing all phases, verify: Outlook shows pinned email with pin icon, categorized email with colored dot indicator, and attachment downloaded. ScrumBoard shows applied filter (highlighted filter button), updated task with correct priority indicator and subtask counter on card. BOUNDARY: Use only the local URLs provided in the task instructions (e.g., http://127.0.0.1:3101 for Outlook, http://127.0.0.1:3100 for ScrumBoard)—do not navigate to public internet sites. Complete all operations on one site before navigating to the next to avoid losing context. When applying filters in ScrumBoard, use get_select_options followed by select_option for reliable tag selection. Scroll through entire inbox to locate all target emails before performing actions on them."
+      ],
+      "sourceQueries": [
+        "query_daa743b4"
+      ],
+      "sourceTaskRuns": [
+        "task_5ac47736"
+      ]
+    }
+  ]
+}
